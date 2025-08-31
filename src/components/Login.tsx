@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import Header from './Header';
-import { signInWithGoogle } from '@/features/auth/auth';
 
 type LoginProps = {
   onBackToHome: () => void;
@@ -10,18 +9,14 @@ type LoginProps = {
 export default function Login({ onBackToHome, onLoginSuccess }: LoginProps) {
   const [isLoading, setIsLoading] = useState(false);
 
-  const handleGoogleLogin = async () => {
+  const handleGoogleLogin = () => {
     setIsLoading(true);
     
-    try {
-      await signInWithGoogle();
-      onLoginSuccess();
-    } catch (error) {
-      console.error('Login error:', error);
-      alert('Erro ao fazer login. Tente novamente.');
-    } finally {
+    // Mock do login com Google
+    setTimeout(() => {
       setIsLoading(false);
-    }
+      onLoginSuccess();
+    }, 1500);
   };
 
   return (

@@ -6,14 +6,11 @@ export default function HeaderAuth() {
   const [user, setUser] = useState<any>(null)
   
   useEffect(() => {
-    const { data: { subscription } } = supabase.auth.onAuthStateChange((_e, session) => {
-      // Only synchronous state updates here
-      setUser(session?.user ?? null)
-    })
-    supabase.auth.getSession().then(({ data }) => setUser(data.session?.user ?? null))
-    return () => subscription.unsubscribe()
+    supabase.auth.getUser().then(({ data }) => setUser(data.user ?? null))
+    const { data: sub } = supabase.auth.onAuthStateChange((_e, s) => setUser(s?.user ?? null))
+    return () => sub.subscription.unsubscribe()
   }, [])
-
+  
   if (!user) {
     return (
       <button 
