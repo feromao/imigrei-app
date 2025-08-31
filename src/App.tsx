@@ -1,11 +1,4 @@
 import { useState, useEffect } from 'react';
-import Home from './components/Home';
-import SearchResults from './components/SearchResults';
-import BusinessDetails from './components/BusinessDetails';
-import BusinessRegisterWizard from './components/BusinessRegisterWizard';
-import HowItWorks from './components/HowItWorks';
-import Login from './components/Login';
-import MyAccount from './components/MyAccount';
 
 export type SearchParams = {
   query: string;
@@ -16,166 +9,142 @@ export type SearchParams = {
 
 type ViewType = 'home' | 'search' | 'business' | 'register-wizard' | 'how-it-works' | 'login' | 'my-account';
 
-// Funções auxiliares para URL params
-function getURLParams(): SearchParams {
-  const urlParams = new URLSearchParams(window.location.search);
-  return {
-    query: urlParams.get('q') || '',
-    location: urlParams.get('cidade') || '',
-    category: urlParams.get('categoria') || '',
-    isOnline: urlParams.get('online') === 'true'
-  };
+function SimpleHeader({ title }: { title: string }) {
+  return (
+    <header className="bg-white shadow-sm border-b border-gray-200 p-4">
+      <div className="max-w-6xl mx-auto">
+        <h1 className="text-2xl font-bold text-green-700">Imigrei - {title}</h1>
+      </div>
+    </header>
+  );
 }
 
-function setURLParams(params: SearchParams, view?: ViewType) {
-  const urlParams = new URLSearchParams();
-  
-  if (params.query) urlParams.set('q', params.query);
-  if (params.location) urlParams.set('cidade', params.location);
-  if (params.category) urlParams.set('categoria', params.category);
-  if (params.isOnline) urlParams.set('online', 'true');
-  
-  const newURL = `${window.location.pathname}${urlParams.toString() ? '?' + urlParams.toString() : ''}`;
-  window.history.pushState({}, '', newURL);
+function SimpleHome({ onNavigate }: { onNavigate: (view: ViewType) => void }) {
+  return (
+    <div className="min-h-screen bg-white">
+      <SimpleHeader title="Home" />
+      <div className="max-w-4xl mx-auto px-4 py-8">
+        <div className="text-center space-y-8">
+          <h2 className="text-4xl font-bold text-gray-800">
+            Encontre negócios brasileiros no exterior
+          </h2>
+          <p className="text-xl text-gray-600">
+            A maior plataforma de negócios brasileiros no exterior
+          </p>
+          
+          <div className="space-y-4">
+            <button
+              onClick={() => onNavigate('search')}
+              className="w-full max-w-md mx-auto block bg-green-600 text-white py-3 px-6 rounded-lg hover:bg-green-700 transition-colors"
+            >
+              Buscar Negócios
+            </button>
+            
+            <button
+              onClick={() => onNavigate('register-wizard')}
+              className="w-full max-w-md mx-auto block bg-orange-500 text-white py-3 px-6 rounded-lg hover:bg-orange-600 transition-colors"
+            >
+              Cadastrar Meu Negócio
+            </button>
+            
+            <button
+              onClick={() => onNavigate('login')}
+              className="w-full max-w-md mx-auto block border-2 border-green-600 text-green-600 py-3 px-6 rounded-lg hover:bg-green-50 transition-colors"
+            >
+              Fazer Login
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function SimpleSearch({ onNavigate }: { onNavigate: (view: ViewType) => void }) {
+  return (
+    <div className="min-h-screen bg-white">
+      <SimpleHeader title="Buscar" />
+      <div className="max-w-4xl mx-auto px-4 py-8">
+        <div className="space-y-6">
+          <input
+            type="text"
+            placeholder="Buscar negócios..."
+            className="w-full p-4 border border-gray-300 rounded-lg text-lg"
+          />
+          <div className="text-center">
+            <p className="text-gray-600">Resultados da busca aparecerão aqui</p>
+            <button
+              onClick={() => onNavigate('home')}
+              className="mt-4 text-green-600 hover:underline"
+            >
+              ← Voltar para Home
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function SimpleLogin({ onNavigate }: { onNavigate: (view: ViewType) => void }) {
+  return (
+    <div className="min-h-screen bg-white">
+      <SimpleHeader title="Login" />
+      <div className="max-w-md mx-auto px-4 py-8">
+        <div className="space-y-6">
+          <div className="text-center">
+            <h2 className="text-2xl font-bold text-gray-800">Entre na sua conta</h2>
+          </div>
+          
+          <button className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors">
+            Entrar com Google
+          </button>
+          
+          <div className="text-center">
+            <button
+              onClick={() => onNavigate('home')}
+              className="text-green-600 hover:underline"
+            >
+              ← Voltar para Home
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default function App() {
   const [currentView, setCurrentView] = useState<ViewType>('home');
-  const [searchParams, setSearchParams] = useState<SearchParams>({ query: '' });
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-
-  // Inicializar com parâmetros da URL
-  useEffect(() => {
-    const urlParams = getURLParams();
-    
-    // Se há parâmetros de busca na URL, vai direto para busca
-    if (urlParams.query || urlParams.location || urlParams.category || urlParams.isOnline) {
-      setSearchParams(urlParams);
-      setCurrentView('search');
-    }
-    
-    // Escutar mudanças de navegação (back/forward)
-    const handlePopState = () => {
-      const params = getURLParams();
-      
-      if (params.query || params.location || params.category || params.isOnline) {
-        setSearchParams(params);
-        setCurrentView('search');
-      } else {
-        setCurrentView('home');
-        setSearchParams({ query: '' });
-      }
-    };
-
-    window.addEventListener('popstate', handlePopState);
-    return () => window.removeEventListener('popstate', handlePopState);
-  }, []);
-
-  const handleSearch = (params: SearchParams) => {
-    setSearchParams(params);
-    setCurrentView('search');
-    setURLParams(params, 'search');
-  };
-
-  const handleBackToHome = () => {
-    setCurrentView('home');
-    setSearchParams({ query: '' });
-    window.history.pushState({}, '', window.location.pathname);
-  };
-
-  const handleViewBusiness = () => {
-    setCurrentView('business');
-  };
-
-  const handleBackToSearch = () => {
-    setCurrentView('search');
-  };
-
-  const handleShowBusinessRegister = () => {
-    setCurrentView('register-wizard');
-  };
-
-  const handleShowHowItWorks = () => {
-    setCurrentView('how-it-works');
-  };
-
-  const handleShowLogin = () => {
-    setCurrentView('login');
-  };
-
-  const handleLoginSuccess = () => {
-    setIsLoggedIn(true);
-    setCurrentView('my-account');
-  };
-
-  const handleLogout = () => {
-    setIsLoggedIn(false);
-    setCurrentView('home');
-  };
-
-  const handleRegisterSuccess = () => {
-    setIsLoggedIn(true);
-    setCurrentView('my-account');
-  };
 
   return (
     <div className="bg-white">
       {currentView === 'home' && (
-        <Home 
-          onSearch={handleSearch} 
-          onViewBusiness={handleViewBusiness}
-          onBusinessRegisterClick={handleShowBusinessRegister}
-          onHowItWorksClick={handleShowHowItWorks}
-          isLoggedIn={isLoggedIn}
-          onLoginClick={handleShowLogin}
-          onMyAccountClick={() => setCurrentView('my-account')}
-        />
+        <SimpleHome onNavigate={setCurrentView} />
       )}
       
       {currentView === 'search' && (
-        <SearchResults 
-          searchParams={searchParams}
-          onNewSearch={handleSearch}
-          onBackToHome={handleBackToHome}
-          onViewBusiness={handleViewBusiness}
-        />
+        <SimpleSearch onNavigate={setCurrentView} />
       )}
       
-      {currentView === 'business' && (
-        <BusinessDetails 
-          onBackToSearch={handleBackToSearch}
-          onBackToHome={handleBackToHome}
-        />
-      )}
-      
-      {currentView === 'register-wizard' && (
-        <BusinessRegisterWizard 
-          onBackToHome={handleBackToHome}
-          onSuccess={handleRegisterSuccess}
-          onLogin={handleShowLogin}
-        />
-      )}
-      
-      {currentView === 'how-it-works' && (
-        <HowItWorks 
-          onBackToHome={handleBackToHome}
-          onSearchClick={() => handleSearch({ query: '', location: '', category: '' })}
-          onBusinessRegisterClick={handleShowBusinessRegister}
-        />
-      )}
-
       {currentView === 'login' && (
-        <Login
-          onBackToHome={handleBackToHome}
-          onLoginSuccess={handleLoginSuccess}
-        />
+        <SimpleLogin onNavigate={setCurrentView} />
       )}
-
-      {currentView === 'my-account' && (
-        <MyAccount
-          onBackToHome={handleBackToHome}
-          onLogout={handleLogout}
-        />
+      
+      {/* Placeholder para outras views */}
+      {!['home', 'search', 'login'].includes(currentView) && (
+        <div className="min-h-screen bg-white">
+          <SimpleHeader title={currentView} />
+          <div className="max-w-4xl mx-auto px-4 py-8 text-center">
+            <p className="text-gray-600">Página {currentView} em construção</p>
+            <button
+              onClick={() => setCurrentView('home')}
+              className="mt-4 text-green-600 hover:underline"
+            >
+              ← Voltar para Home
+            </button>
+          </div>
+        </div>
       )}
     </div>
   );
