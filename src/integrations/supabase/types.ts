@@ -84,7 +84,7 @@ export type Database = {
           lng: number | null
           logo_url: string | null
           nome: string
-          owner_user_id: string | null
+          owner_user_id: string
           pais_id: string | null
           status: string | null
           telefone: string | null
@@ -105,7 +105,7 @@ export type Database = {
           lng?: number | null
           logo_url?: string | null
           nome: string
-          owner_user_id?: string | null
+          owner_user_id: string
           pais_id?: string | null
           status?: string | null
           telefone?: string | null
@@ -126,7 +126,7 @@ export type Database = {
           lng?: number | null
           logo_url?: string | null
           nome?: string
-          owner_user_id?: string | null
+          owner_user_id?: string
           pais_id?: string | null
           status?: string | null
           telefone?: string | null
