@@ -1,79 +1,20 @@
-
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react-swc';
 import path from 'path';
-import { componentTagger } from "lovable-tagger";
 
-export default defineConfig(({ mode }) => ({
-  plugins: [
-    react(),
-    mode === 'development' && componentTagger(),
-  ].filter(Boolean),
-    resolve: {
-      extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
-      alias: {
-        'vaul@1.1.2': 'vaul',
-        'sonner@2.0.3': 'sonner',
-        'recharts@2.15.2': 'recharts',
-        'react-resizable-panels@2.1.7': 'react-resizable-panels',
-        'react-hook-form@7.55.0': 'react-hook-form',
-        'react-day-picker@8.10.1': 'react-day-picker',
-        'next-themes@0.4.6': 'next-themes',
-        'lucide-react@0.487.0': 'lucide-react',
-        'input-otp@1.4.2': 'input-otp',
-        'figma:asset/ee3c16460e8e361350daf085cb522d4df38938b6.png': path.resolve(__dirname, './src/assets/ee3c16460e8e361350daf085cb522d4df38938b6.png'),
-        'figma:asset/e6073ce3ec6ee9c0d9052729b6c469d36ad4f39a.png': path.resolve(__dirname, './src/assets/e6073ce3ec6ee9c0d9052729b6c469d36ad4f39a.png'),
-        'figma:asset/cf79cd26b73cb484a8e1638ea5469b3864a4da82.png': path.resolve(__dirname, './src/assets/cf79cd26b73cb484a8e1638ea5469b3864a4da82.png'),
-        'figma:asset/c8d5d9929c480d250ed830f65f5105755a4c03ea.png': path.resolve(__dirname, './src/assets/c8d5d9929c480d250ed830f65f5105755a4c03ea.png'),
-        'figma:asset/b956872a7f0928d7b5fd2a3436285453f2abd40a.png': path.resolve(__dirname, './src/assets/b956872a7f0928d7b5fd2a3436285453f2abd40a.png'),
-        'figma:asset/9fe3542782fb5ddcace6dc119dd18c8d84cd3054.png': path.resolve(__dirname, './src/assets/9fe3542782fb5ddcace6dc119dd18c8d84cd3054.png'),
-        'figma:asset/7cf39a8a103779f629bf0cb4e66ecf5ecc4f2ba3.png': path.resolve(__dirname, './src/assets/7cf39a8a103779f629bf0cb4e66ecf5ecc4f2ba3.png'),
-        'figma:asset/647c005ae5f550b7c67a0b2759883b43c4af2436.png': path.resolve(__dirname, './src/assets/647c005ae5f550b7c67a0b2759883b43c4af2436.png'),
-        'figma:asset/5cab391189e0afc65d102c0ed1e997be82570304.png': path.resolve(__dirname, './src/assets/5cab391189e0afc65d102c0ed1e997be82570304.png'),
-        'figma:asset/4b284ebd3e36517122ae5099a6f29d30444cc8d8.png': path.resolve(__dirname, './src/assets/4b284ebd3e36517122ae5099a6f29d30444cc8d8.png'),
-        'figma:asset/4070f80c566f604fdf9d98fcbf1d6d7aa80d7d06.png': path.resolve(__dirname, './src/assets/4070f80c566f604fdf9d98fcbf1d6d7aa80d7d06.png'),
-        'figma:asset/2e005d40b98d8712126033e90aac89d7fe4d172f.png': path.resolve(__dirname, './src/assets/2e005d40b98d8712126033e90aac89d7fe4d172f.png'),
-        'figma:asset/2401e2bbdc7fa4676669c7da465c13e413c1eef1.png': path.resolve(__dirname, './src/assets/2401e2bbdc7fa4676669c7da465c13e413c1eef1.png'),
-        'figma:asset/2035facb4988558e747798b173e37ea8f9511133.png': path.resolve(__dirname, './src/assets/2035facb4988558e747798b173e37ea8f9511133.png'),
-        'embla-carousel-react@8.6.0': 'embla-carousel-react',
-        'cmdk@1.1.1': 'cmdk',
-        'class-variance-authority@0.7.1': 'class-variance-authority',
-        '@radix-ui/react-tooltip@1.1.8': '@radix-ui/react-tooltip',
-        '@radix-ui/react-toggle@1.1.2': '@radix-ui/react-toggle',
-        '@radix-ui/react-toggle-group@1.1.2': '@radix-ui/react-toggle-group',
-        '@radix-ui/react-tabs@1.1.3': '@radix-ui/react-tabs',
-        '@radix-ui/react-switch@1.1.3': '@radix-ui/react-switch',
-        '@radix-ui/react-slot@1.1.2': '@radix-ui/react-slot',
-        '@radix-ui/react-slider@1.2.3': '@radix-ui/react-slider',
-        '@radix-ui/react-separator@1.1.2': '@radix-ui/react-separator',
-        '@radix-ui/react-select@2.1.6': '@radix-ui/react-select',
-        '@radix-ui/react-scroll-area@1.2.3': '@radix-ui/react-scroll-area',
-        '@radix-ui/react-radio-group@1.2.3': '@radix-ui/react-radio-group',
-        '@radix-ui/react-progress@1.1.2': '@radix-ui/react-progress',
-        '@radix-ui/react-popover@1.1.6': '@radix-ui/react-popover',
-        '@radix-ui/react-navigation-menu@1.2.5': '@radix-ui/react-navigation-menu',
-        '@radix-ui/react-menubar@1.1.6': '@radix-ui/react-menubar',
-        '@radix-ui/react-label@2.1.2': '@radix-ui/react-label',
-        '@radix-ui/react-hover-card@1.1.6': '@radix-ui/react-hover-card',
-        '@radix-ui/react-dropdown-menu@2.1.6': '@radix-ui/react-dropdown-menu',
-        '@radix-ui/react-dialog@1.1.6': '@radix-ui/react-dialog',
-        '@radix-ui/react-context-menu@2.2.6': '@radix-ui/react-context-menu',
-        '@radix-ui/react-collapsible@1.1.3': '@radix-ui/react-collapsible',
-        '@radix-ui/react-checkbox@1.1.4': '@radix-ui/react-checkbox',
-        '@radix-ui/react-avatar@1.1.3': '@radix-ui/react-avatar',
-        '@radix-ui/react-aspect-ratio@1.1.2': '@radix-ui/react-aspect-ratio',
-        '@radix-ui/react-alert-dialog@1.1.6': '@radix-ui/react-alert-dialog',
-        '@radix-ui/react-accordion@1.2.3': '@radix-ui/react-accordion',
-        '@': path.resolve(__dirname, './src'),
-      },
+export default defineConfig({
+  plugins: [react()],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
     },
-    build: {
-      target: 'esnext',
-      outDir: 'build',
-    },
-    server: {
-      host: "::",
-      port: 8080,
-      open: true,
-    },
-  }));
+  },
+  build: {
+    target: 'esnext',
+    outDir: 'build',
+  },
+  server: {
+    host: "::",
+    port: 8080,
+  },
+});
