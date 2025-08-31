@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { supabase } from '@/lib/supabaseClient';
 import Home from './components/Home';
 import SearchResults from './components/SearchResults';
 import BusinessDetails from './components/BusinessDetails';
@@ -40,66 +39,10 @@ function setURLParams(params: SearchParams, view?: ViewType) {
   window.history.pushState({}, '', newURL);
 }
 
-// Hook de autenticação integrado
-function useAuth() {
-  const [user, setUser] = useState<any>(null);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    // Get initial session
-    supabase.auth.getSession().then(({ data: { session } }) => {
-      setUser(session?.user ?? null);
-      setLoading(false);
-    });
-
-    // Listen for auth changes
-    const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
-      setUser(session?.user ?? null);
-      setLoading(false);
-    });
-
-    return () => subscription.unsubscribe();
-  }, []);
-
-  return { user, loading };
-}
-
-// Auth Guard Component
-function AuthGuard({ children, onUnauthenticated }: { children: React.ReactNode; onUnauthenticated?: () => void }) {
-  const { user, loading } = useAuth();
-
-  if (loading) {
-    return (
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-gray-900"></div>
-      </div>
-    );
-  }
-
-  if (!user) {
-    if (onUnauthenticated) {
-      onUnauthenticated();
-      return null;
-    }
-    
-    return (
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="text-center">
-          <h2 className="text-2xl font-bold mb-4">Acesso Restrito</h2>
-          <p className="text-gray-600">Você precisa estar logado para acessar esta página.</p>
-        </div>
-      </div>
-    );
-  }
-
-  return <>{children}</>;
-}
-
 export default function App() {
   const [currentView, setCurrentView] = useState<ViewType>('home');
   const [searchParams, setSearchParams] = useState<SearchParams>({ query: '' });
-  const { user } = useAuth();
-  const isLoggedIn = !!user;
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   // Inicializar com parâmetros da URL
   useEffect(() => {
@@ -137,7 +80,6 @@ export default function App() {
   const handleBackToHome = () => {
     setCurrentView('home');
     setSearchParams({ query: '' });
-    // Limpar URL params
     window.history.pushState({}, '', window.location.pathname);
   };
 
@@ -162,14 +104,17 @@ export default function App() {
   };
 
   const handleLoginSuccess = () => {
+    setIsLoggedIn(true);
     setCurrentView('my-account');
   };
 
   const handleLogout = () => {
+    setIsLoggedIn(false);
     setCurrentView('home');
   };
 
   const handleRegisterSuccess = () => {
+    setIsLoggedIn(true);
     setCurrentView('my-account');
   };
 
@@ -204,13 +149,11 @@ export default function App() {
       )}
       
       {currentView === 'register-wizard' && (
-        <AuthGuard onUnauthenticated={handleShowLogin}>
-          <BusinessRegisterWizard 
-            onBackToHome={handleBackToHome}
-            onSuccess={handleRegisterSuccess}
-            onLogin={handleShowLogin}
-          />
-        </AuthGuard>
+        <BusinessRegisterWizard 
+          onBackToHome={handleBackToHome}
+          onSuccess={handleRegisterSuccess}
+          onLogin={handleShowLogin}
+        />
       )}
       
       {currentView === 'how-it-works' && (
@@ -229,12 +172,10 @@ export default function App() {
       )}
 
       {currentView === 'my-account' && (
-        <AuthGuard onUnauthenticated={handleShowLogin}>
-          <MyAccount
-            onBackToHome={handleBackToHome}
-            onLogout={handleLogout}
-          />
-        </AuthGuard>
+        <MyAccount
+          onBackToHome={handleBackToHome}
+          onLogout={handleLogout}
+        />
       )}
     </div>
   );
