@@ -8,7 +8,7 @@ import Login from './components/Login';
 import MyAccount from './components/MyAccount';
 import AuthGuard from './components/AuthGuard';
 import { useAuth } from './hooks/useAuth';
-// import { Toaster } from '@/components/ui/sonner';
+
 
 export type SearchParams = {
   query: string;
@@ -183,8 +183,6 @@ export default function App() {
           />
         </AuthGuard>
       )}
-      
-      {/* <Toaster /> */}
     </div>
   );
 }

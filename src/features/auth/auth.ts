@@ -1,23 +1,22 @@
-import { supabase } from '@/lib/supabaseClient'
+import { supabase } from '@/lib/supabaseClient';
 
 export async function signInWithGoogle() {
   const { error } = await supabase.auth.signInWithOAuth({
     provider: 'google',
     options: { 
-      redirectTo: `${window.location.origin}/`
+      redirectTo: window.location.origin 
     }
-  })
-  if (error) throw error
+  });
+  if (error) {
+    console.error('Google login error:', error);
+    throw error;
+  }
 }
 
 export async function signOut() {
-  try {
-    await supabase.auth.signOut({ scope: 'global' });
-    // Force page reload for clean state
-    window.location.href = '/';
-  } catch (error) {
+  const { error } = await supabase.auth.signOut();
+  if (error) {
     console.error('Logout error:', error);
-    // Force logout even if API call fails
-    window.location.href = '/';
   }
+  window.location.href = '/';
 }

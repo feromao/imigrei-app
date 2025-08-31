@@ -4,7 +4,7 @@ import { Checkbox } from './ui/checkbox';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from './ui/collapsible';
 import { signInWithGoogle } from '@/features/auth/auth';
 import { useAuth } from '@/hooks/useAuth';
-// import { toast } from 'sonner';
+
 
 type BusinessRegisterWizardProps = {
   onBackToHome: () => void;

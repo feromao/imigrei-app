@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import Header from './Header';
 import { signInWithGoogle } from '@/features/auth/auth';
-// import { toast } from 'sonner';
 
 type LoginProps = {
   onBackToHome: () => void;
