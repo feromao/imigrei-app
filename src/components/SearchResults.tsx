@@ -6,8 +6,7 @@ import BusinessCard from './BusinessCard';
 import NewSearchComponent from './NewSearchComponent';
 import { Button } from './ui/button';
 import { SearchParams } from '../App';
-import { searchNegocios, fetchCategorias } from '../features/search/api';
-import { googleMapsLink } from '../lib/maps';
+import { buscarPorQuery, buscarNegocios, type Negocio } from '../lib/search';
 
 type SearchResultsProps = {
   searchParams: SearchParams;
@@ -94,16 +93,8 @@ function Icones7() {
 }
 
 function Item1() {
-  const handleMapClick = () => {
-    alert('Este recurso estará disponível em breve!');
-  };
-
   return (
-    <div 
-      className="bg-[#0d2a14] box-border content-stretch flex gap-1 items-center justify-start px-4 py-3 relative rounded-[8px] shrink-0 cursor-pointer" 
-      data-name="Item"
-      onClick={handleMapClick}
-    >
+    <div className="bg-[#0d2a14] box-border content-stretch flex gap-1 items-center justify-start px-4 py-3 relative rounded-[8px] shrink-0" data-name="Item">
       <Icones7 />
       <div className="font-['Manrope',_sans-serif] font-medium leading-[0] not-italic relative shrink-0 text-white text-[12px] text-nowrap tracking-[0.6px]">
         <p className="leading-[normal] whitespace-pre">Mapa</p>
@@ -145,44 +136,11 @@ function Frame74({ resultsCount, searchParams }: { resultsCount: number; searchP
 
 // Todos os componentes de card foram substituídos pelo BusinessCard padronizado
 
-function Frame70({ negocios, onViewBusiness }: { negocios: any[]; onViewBusiness: () => void }) {
+function Frame70({ negocios, onViewBusiness }: { negocios: Negocio[]; onViewBusiness: () => void }) {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 w-full max-w-[1200px] px-4 sm:px-0">
       {negocios.map((negocio) => (
-        <div key={negocio.id} className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
-          <div className="flex items-center gap-3 mb-3">
-            {negocio.logo_url && (
-              <img src={negocio.logo_url} alt={negocio.nome} className="w-12 h-12 rounded-full object-cover" />
-            )}
-            <div>
-              <h3 className="font-['Manrope',_sans-serif] font-medium text-[#005a22] text-[16px] tracking-[0.45px]">
-                {negocio.nome}
-              </h3>
-            </div>
-          </div>
-          {negocio.descricao && (
-            <p className="text-[14px] text-gray-600 mb-3 line-clamp-2">{negocio.descricao}</p>
-          )}
-          {negocio.endereco && (
-            <p className="text-[12px] text-gray-500 mb-3">{negocio.endereco}</p>
-          )}
-          <div className="flex gap-2">
-            <button
-              onClick={() => onViewBusiness()}
-              className="px-3 py-2 bg-[#005a22] text-white rounded-lg text-[12px] hover:bg-[#008934] transition-colors"
-            >
-              Ver Detalhes
-            </button>
-            <a
-              href={googleMapsLink(negocio)}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-3 py-2 bg-[#ff6c0e] text-white rounded-lg text-[12px] hover:bg-orange-600 transition-colors"
-            >
-              Abrir no mapa
-            </a>
-          </div>
-        </div>
+        <BusinessCard key={negocio.id} negocio={negocio} onViewDetails={onViewBusiness} variant="grid" />
       ))}
     </div>
   );
@@ -220,7 +178,7 @@ function EmptyState({ onClearFilters }: { onClearFilters: () => void }) {
 }
 
 function Frame90({ negocios, onViewBusiness, onClearFilters }: { 
-  negocios: any[]; 
+  negocios: Negocio[]; 
   onViewBusiness: () => void;
   onClearFilters: () => void;
 }) {
@@ -240,7 +198,7 @@ function Frame75({ onSearch, resultsCount, onViewBusiness, searchParams, negocio
   resultsCount: number;
   onViewBusiness: () => void;
   searchParams: SearchParams;
-  negocios: any[];
+  negocios: Negocio[];
   onClearFilters: () => void;
 }) {
   return (
@@ -260,7 +218,7 @@ function Tudo({ onSearch, onBackToHome, resultsCount, onViewBusiness, searchPara
   resultsCount: number;
   onViewBusiness: () => void;
   searchParams: SearchParams;
-  negocios: any[];
+  negocios: Negocio[];
   onClearFilters: () => void;
 }) {
   return (
@@ -282,43 +240,38 @@ function Tudo({ onSearch, onBackToHome, resultsCount, onViewBusiness, searchPara
 }
 
 export default function SearchResults({ searchParams, onNewSearch, onBackToHome, onViewBusiness }: SearchResultsProps) {
-  const [negocios, setNegocios] = useState<any[]>([]);
-  const [loading, setLoading] = useState(false);
 
-  // Buscar dados reais do Supabase
-  useEffect(() => {
-    const fetchData = async () => {
-      setLoading(true);
-      try {
-        // Buscar categoria ID se fornecida
-        let categoriaId = null;
-        if (searchParams.category) {
-          const categorias = await fetchCategorias(searchParams.category);
-          if (categorias.length > 0) {
-            categoriaId = categorias[0].id;
-          }
-        }
-
-        // Mapear cidades para IDs (por enquanto usaremos os nomes)
-        const cidadeIds = searchParams.location ? [searchParams.location] : null;
-
-        // Fazer busca
-        const resultados = await searchNegocios({
-          categoriaId,
-          cidadeIds,
-          anywhere: searchParams.isOnline
-        });
-
-        setNegocios(resultados || []);
-      } catch (error) {
-        console.error('Erro ao buscar negócios:', error);
-        setNegocios([]);
-      } finally {
-        setLoading(false);
+  // Memoizar resultados da busca para melhor performance
+  const negocios = useMemo(() => {
+    let resultados: Negocio[];
+    
+    if (searchParams.isOnline) {
+      // Pesquisar em qualquer lugar - busca categoria em todas as cidades
+      if (searchParams.category) {
+        // Se tem categoria específica, busca essa categoria em todas as cidades
+        resultados = buscarNegocios(undefined, searchParams.category);
+      } else {
+        // Se não tem categoria específica, busca todas as categorias online
+        resultados = buscarNegocios(undefined, 'Aulas').concat(buscarNegocios(undefined, 'Contador'));
       }
-    };
-
-    fetchData();
+    } else if (searchParams.location && searchParams.category) {
+      // Busca por cidade e categoria
+      resultados = buscarNegocios(searchParams.location, searchParams.category);
+    } else if (searchParams.location) {
+      // Busca apenas por cidade
+      resultados = buscarNegocios(searchParams.location);
+    } else if (searchParams.category) {
+      // Busca apenas por categoria
+      resultados = buscarNegocios(undefined, searchParams.category);
+    } else if (searchParams.query) {
+      // Busca por query livre
+      resultados = buscarPorQuery(searchParams.query);
+    } else {
+      // Sem filtros, retorna array vazio para mostrar empty state
+      resultados = [];
+    }
+    
+    return resultados;
   }, [searchParams]);
 
   const handleClearFilters = () => {

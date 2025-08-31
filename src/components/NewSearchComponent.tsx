@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import svgPaths from "../imports/svg-8fz255jd3i";
-import { fetchCategorias } from '../features/search/api';
+import { obterCategorias } from '../lib/search';
 
 interface NewSearchComponentProps {
   onSearch: (params: { query: string; location: string; category?: string; isOnline?: boolean }) => void;
@@ -59,16 +59,9 @@ export default function NewSearchComponent({ onSearch }: NewSearchComponentProps
   const [showLocationModal, setShowLocationModal] = useState(false);
   const [expandedCountries, setExpandedCountries] = useState<string[]>([]);
   const [searchAnywhere, setSearchAnywhere] = useState(false);
-  const [categories, setCategories] = useState<string[]>([]);
 
   const categoryRef = useRef<HTMLDivElement>(null);
-
-  // Carregar categorias
-  useEffect(() => {
-    fetchCategorias().then(data => {
-      setCategories(data.map(c => c.nome));
-    }).catch(console.error);
-  }, []);
+  const categories = obterCategorias();
 
   // Fechar dropdown quando clicar fora
   useEffect(() => {
