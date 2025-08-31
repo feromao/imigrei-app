@@ -1,4 +1,5 @@
 import svgPaths from "../imports/svg-r31p3ypuy6";
+import HeaderAuth from "../features/auth/HeaderAuth";
 
 // Logo placeholder simples
 function LogoPlaceholder() {
@@ -98,22 +99,9 @@ export default function Header({
           <LogoPlaceholder />
         </div>
 
-        {/* Login/Register or Account */}
+        {/* Auth */}
         <div className="flex gap-2 sm:gap-3 items-center">
-          {isLoggedIn ? (
-            <HeaderButton onClick={onMyAccountClick}>
-              <span className="px-[0px] py-[4px] mx-[0px] my-[4px]">Minha Conta</span>
-            </HeaderButton>
-          ) : (
-            <>
-              <HeaderButton onClick={onLoginClick}>
-                <span className="px-[0px] py-[4px] my-[2px] mx-[0px] m-[0px]">Entrar</span>
-              </HeaderButton>
-              <HeaderButton variant="primary" onClick={onBusinessRegisterClick}>
-                <span className="font-bold font-normal text-[12px] py-[4px] px-[0px] my-[2px] mx-[0px] m-[0px]">Cadastrar Negócio Grátis</span>
-              </HeaderButton>
-            </>
-          )}
+          <HeaderAuth />
         </div>
       </div>
     </div>
