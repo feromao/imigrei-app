@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Header from './Header';
 import { signInWithGoogle } from '@/features/auth/auth';
+import { toast } from 'sonner';
 
 type LoginProps = {
   onBackToHome: () => void;
@@ -11,13 +12,16 @@ export default function Login({ onBackToHome, onLoginSuccess }: LoginProps) {
   const [isLoading, setIsLoading] = useState(false);
 
   const handleGoogleLogin = async () => {
+    setIsLoading(true);
+    
     try {
-      setIsLoading(true);
-      await signInWithGoogle(); // OAuth will redirect and return
-    } catch (e) {
+      await signInWithGoogle();
+      onLoginSuccess();
+    } catch (error) {
+      console.error('Login error:', error);
+      toast.error('Erro ao fazer login. Tente novamente.');
+    } finally {
       setIsLoading(false);
-      console.error(e);
-      alert('Não foi possível iniciar o login com Google');
     }
   };
 

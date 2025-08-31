@@ -6,6 +6,9 @@ import BusinessRegisterWizard from './components/BusinessRegisterWizard';
 import HowItWorks from './components/HowItWorks';
 import Login from './components/Login';
 import MyAccount from './components/MyAccount';
+import AuthGuard from './components/AuthGuard';
+import { useAuth } from './hooks/useAuth';
+import { Toaster } from '@/components/ui/sonner';
 
 export type SearchParams = {
   query: string;
@@ -42,7 +45,8 @@ function setURLParams(params: SearchParams, view?: ViewType) {
 export default function App() {
   const [currentView, setCurrentView] = useState<ViewType>('home');
   const [searchParams, setSearchParams] = useState<SearchParams>({ query: '' });
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const { user } = useAuth();
+  const isLoggedIn = !!user;
 
   // Inicializar com parâmetros da URL
   useEffect(() => {
@@ -105,17 +109,14 @@ export default function App() {
   };
 
   const handleLoginSuccess = () => {
-    setIsLoggedIn(true);
     setCurrentView('my-account');
   };
 
   const handleLogout = () => {
-    setIsLoggedIn(false);
     setCurrentView('home');
   };
 
   const handleRegisterSuccess = () => {
-    setIsLoggedIn(true);
     setCurrentView('my-account');
   };
 
@@ -150,11 +151,13 @@ export default function App() {
       )}
       
       {currentView === 'register-wizard' && (
-        <BusinessRegisterWizard 
-          onBackToHome={handleBackToHome}
-          onSuccess={handleRegisterSuccess}
-          onLogin={handleShowLogin}
-        />
+        <AuthGuard onUnauthenticated={handleShowLogin}>
+          <BusinessRegisterWizard 
+            onBackToHome={handleBackToHome}
+            onSuccess={handleRegisterSuccess}
+            onLogin={handleShowLogin}
+          />
+        </AuthGuard>
       )}
       
       {currentView === 'how-it-works' && (
@@ -173,11 +176,15 @@ export default function App() {
       )}
 
       {currentView === 'my-account' && (
-        <MyAccount
-          onBackToHome={handleBackToHome}
-          onLogout={handleLogout}
-        />
+        <AuthGuard onUnauthenticated={handleShowLogin}>
+          <MyAccount
+            onBackToHome={handleBackToHome}
+            onLogout={handleLogout}
+          />
+        </AuthGuard>
       )}
+      
+      <Toaster />
     </div>
   );
 }
