@@ -13,7 +13,7 @@ export default function AuthGuard({ children, fallback, onUnauthenticated }: Aut
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-primary"></div>
+        <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-[#005a22]"></div>
       </div>
     );
   }
@@ -28,7 +28,7 @@ export default function AuthGuard({ children, fallback, onUnauthenticated }: Aut
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
           <h2 className="text-2xl font-bold mb-4">Acesso Restrito</h2>
-          <p className="text-muted-foreground">Você precisa estar logado para acessar esta página.</p>
+          <p className="text-gray-600">Você precisa estar logado para acessar esta página.</p>
         </div>
       </div>
     );

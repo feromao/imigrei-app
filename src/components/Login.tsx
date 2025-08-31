@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Header from './Header';
 import { signInWithGoogle } from '@/features/auth/auth';
-import { toast } from 'sonner';
+// import { toast } from 'sonner';
 
 type LoginProps = {
   onBackToHome: () => void;
@@ -19,7 +19,7 @@ export default function Login({ onBackToHome, onLoginSuccess }: LoginProps) {
       onLoginSuccess();
     } catch (error) {
       console.error('Login error:', error);
-      toast.error('Erro ao fazer login. Tente novamente.');
+      alert('Erro ao fazer login. Tente novamente.');
     } finally {
       setIsLoading(false);
     }

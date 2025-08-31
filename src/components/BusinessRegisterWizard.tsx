@@ -4,7 +4,7 @@ import { Checkbox } from './ui/checkbox';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from './ui/collapsible';
 import { signInWithGoogle } from '@/features/auth/auth';
 import { useAuth } from '@/hooks/useAuth';
-import { toast } from 'sonner';
+// import { toast } from 'sonner';
 
 type BusinessRegisterWizardProps = {
   onBackToHome: () => void;
@@ -365,7 +365,7 @@ function Step2({ onNext }: { onNext: () => void }) {
       onNext();
     } catch (error) {
       console.error('Login error:', error);
-      toast.error('Erro ao fazer login. Tente novamente.');
+      alert('Erro ao fazer login. Tente novamente.');
     } finally {
       setIsLoading(false);
     }
