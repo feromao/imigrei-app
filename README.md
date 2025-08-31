@@ -1,73 +1,56 @@
-# Welcome to your Lovable project
+🌍 Imigrei!
 
-## Project info
+A vitrine global dos negócios brasileiros. Conectamos brasileiros no exterior a serviços e empreendimentos de confiança, de forma simples e gratuita.
 
-**URL**: https://lovable.dev/projects/fd73be7e-d27a-438c-ae1f-ccbb2f501bfb
+🚀 Sobre o projeto
 
-## How can I edit this code?
+O Imigrei! é um aplicativo voltado para centralizar comércios, serviços e profissionais brasileiros em qualquer lugar do mundo. Com ele, você pode:
+	•	Encontrar negócios brasileiros no exterior através de categorias e mapa interativo.
+	•	Descobrir profissionais que falam sua língua e entendem sua cultura.
+	•	Cadastrar seu negócio gratuitamente e alcançar mais clientes.
 
-There are several ways of editing your application.
+🎯 Proposta de Valor
 
-**Use Lovable**
+Para usuários: encontrar rapidamente serviços em português, sem depender de buscas genéricas. Para empreendedores: ter mais visibilidade e atrair clientes em um só lugar.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/fd73be7e-d27a-438c-ae1f-ccbb2f501bfb) and start prompting.
+🛠️ Funcionalidades do MVP
 
-Changes made via Lovable will be committed automatically to this repo.
+	•	Cadastro gratuito de negócios.
+	•	Busca por categoria.
+	•	Exibição em mapa interativo.
+	•	Perfis com nome, contatos e logo/foto.
+Próximos passos:
+	•	Sistema de avaliações ⭐
+	•	Contato direto via WhatsApp
+	•	Perfis premium com destaque
+	•	Classificados e cupons de desconto
 
-**Use your preferred IDE**
+💡 Monetização futura
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+	•	Planos Premium (destaque, selo de verificação, métricas de acesso).
+	•	Publicidade segmentada para negócios.
+	•	Cupons e classificados pagos.
+	•	Parcerias B2B (escolas, advogados, seguros, câmbio).
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+🌎 Roadmap inicial
 
-Follow these steps:
+	1	Lançamento piloto em Malta, Espanha e Irlanda.
+	2	Expansão para outras cidades com forte presença de brasileiros.
+	3	Evolução para PWA e depois apps nativos.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+🤝 Como contribuir
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Quer ajudar no projeto?
+	•	Faça um fork do repositório.
+	•	Crie uma branch com sua feature (git checkout -b feature/minha-feature).
+	•	Faça o commit (git commit -m 'Adiciona minha feature').
+	•	Envie para a branch principal (git push origin feature/minha-feature).
+	•	Abra um Pull Request.
 
-# Step 3: Install the necessary dependencies.
-npm i
+📬 Contato
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+📧 contato@imigrei.com 🌐 Site oficial (placeholder)
 
-**Edit a file directly in GitHub**
+📜 Licença
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/fd73be7e-d27a-438c-ae1f-ccbb2f501bfb) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Este projeto está sob a licença MIT.

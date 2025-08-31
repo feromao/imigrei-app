@@ -1,0 +1,3242 @@
+[
+  {
+    "id": 1,
+    "nome": "Sabor do Brasil",
+    "cidade": "Valencia",
+    "categoria": "Restaurante",
+    "descricao": "comida brasileira autêntica",
+    "contato": "contato@saborbrasil.com",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 2,
+    "nome": "Nails Brasil",
+    "cidade": "Valencia",
+    "categoria": "Manicure",
+    "descricao": "unhas perfeitas sempre",
+    "contato": "agendamento@nailsbrasil.com",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 3,
+    "nome": "Mercadinho Tropical",
+    "cidade": "Valencia",
+    "categoria": "Mercado",
+    "descricao": "produtos brasileiros frescos",
+    "contato": "vendas@tropicalmercado.com",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 4,
+    "nome": "Contabilidade Silva",
+    "cidade": "Valencia",
+    "categoria": "Contador",
+    "descricao": "serviços contábeis online",
+    "contato": "atendimento@silvaconta.com",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 5,
+    "nome": "Hair Brasil",
+    "cidade": "Valencia",
+    "categoria": "Cabeleireiro",
+    "descricao": "cortes modernos brasileiros",
+    "contato": "agenda@hairbrasil.com",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 6,
+    "nome": "Português Online",
+    "cidade": "Valencia",
+    "categoria": "Aulas",
+    "descricao": "aulas virtuais interativas",
+    "contato": "professora@portuguesonline.com",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 7,
+    "nome": "Clean House Brasil",
+    "cidade": "Valencia",
+    "categoria": "Limpeza",
+    "descricao": "limpeza residencial profissional",
+    "contato": "servicos@cleanhousebr.com",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 8,
+    "nome": "Churrascaria Gaúcha",
+    "cidade": "Valencia",
+    "categoria": "Restaurante",
+    "descricao": "carnes nobres tradicionais",
+    "contato": "reservas@gauchavlc.com",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 9,
+    "nome": "Açaí Valencia",
+    "cidade": "Valencia",
+    "categoria": "Restaurante",
+    "descricao": "açaí gelado natural",
+    "contato": "pedidos@acaivalencia.com",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 10,
+    "nome": "Beleza Brasileira",
+    "cidade": "Valencia",
+    "categoria": "Manicure",
+    "descricao": "tratamentos estéticos completos",
+    "contato": "agenda@belezabr.com",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 11,
+    "nome": "Supermercado Verde",
+    "cidade": "Valencia",
+    "categoria": "Mercado",
+    "descricao": "alimentos orgânicos brasileiros",
+    "contato": "compras@superverde.com",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 12,
+    "nome": "Studio Hair BR",
+    "cidade": "Valencia",
+    "categoria": "Cabeleireiro",
+    "descricao": "tratamentos capilares avançados",
+    "contato": "studio@hairbr.com",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 13,
+    "nome": "Limpeza Express",
+    "cidade": "Valencia",
+    "categoria": "Limpeza",
+    "descricao": "serviços rápidos qualidade",
+    "contato": "express@limpeza.com",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 14,
+    "nome": "Pizzaria Carioca",
+    "cidade": "Valencia",
+    "categoria": "Restaurante",
+    "descricao": "pizza brasileira gostosa",
+    "contato": "delivery@cariocapizza.com",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 15,
+    "nome": "Contador Digital BR",
+    "cidade": "Valencia",
+    "categoria": "Contador",
+    "descricao": "contabilidade digital moderna",
+    "contato": "digital@contadorbr.com",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 16,
+    "nome": "Escola Idiomas",
+    "cidade": "Valencia",
+    "categoria": "Aulas",
+    "descricao": "espanhol para brasileiros",
+    "contato": "idiomas@escola.com",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 17,
+    "nome": "Empório Brasil",
+    "cidade": "Valencia",
+    "categoria": "Mercado",
+    "descricao": "produtos importados selecionados",
+    "contato": "vendas@emporiobr.com",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 18,
+    "nome": "Salão Brasileiro",
+    "cidade": "Valencia",
+    "categoria": "Cabeleireiro",
+    "descricao": "estilo brasileiro autêntico",
+    "contato": "corte@salaobrasileiro.com",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 19,
+    "nome": "Casa Brasileira",
+    "cidade": "Valencia",
+    "categoria": "Restaurante",
+    "descricao": "comida caseira saborosa",
+    "contato": "pedidos@casabrasileira.com",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 20,
+    "nome": "Spa Wellness",
+    "cidade": "Valencia",
+    "categoria": "Manicure",
+    "descricao": "relaxamento e bem-estar",
+    "contato": "wellness@spa.com",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 21,
+    "nome": "Brazilian Pub",
+    "cidade": "Dublin",
+    "categoria": "Restaurante",
+    "descricao": "cerveja música brasileira",
+    "contato": "reservas@brazilianpub.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 22,
+    "nome": "Beauty Dublin",
+    "cidade": "Dublin",
+    "categoria": "Manicure",
+    "descricao": "beleza brasileira dublin",
+    "contato": "beauty@dublin.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 23,
+    "nome": "Mercado Brasileiro",
+    "cidade": "Dublin",
+    "categoria": "Mercado",
+    "descricao": "produtos brasil importados",
+    "contato": "vendas@mercadobr.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 24,
+    "nome": "Tax Brasil",
+    "cidade": "Dublin",
+    "categoria": "Contador",
+    "descricao": "impostos online irlanda",
+    "contato": "tax@brasil.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 25,
+    "nome": "Salon Dublin",
+    "cidade": "Dublin",
+    "categoria": "Cabeleireiro",
+    "descricao": "cabelo brasileiro dublin",
+    "contato": "salon@dublin.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 26,
+    "nome": "English Classes",
+    "cidade": "Dublin",
+    "categoria": "Aulas",
+    "descricao": "inglês brasileiros online",
+    "contato": "english@classes.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 27,
+    "nome": "Clean Dublin",
+    "cidade": "Dublin",
+    "categoria": "Limpeza",
+    "descricao": "limpeza casas dublin",
+    "contato": "clean@dublin.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 28,
+    "nome": "Feijoada House",
+    "cidade": "Dublin",
+    "categoria": "Restaurante",
+    "descricao": "feijoada autêntica sábados",
+    "contato": "feijoada@house.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 29,
+    "nome": "Brigadeiro Café",
+    "cidade": "Dublin",
+    "categoria": "Restaurante",
+    "descricao": "doces café brasileiro",
+    "contato": "brigadeiro@cafe.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 30,
+    "nome": "Nails Brasil Dublin",
+    "cidade": "Dublin",
+    "categoria": "Manicure",
+    "descricao": "manicure pedicure profissional",
+    "contato": "nails@brasildublin.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 31,
+    "nome": "Açougue Brasileiro",
+    "cidade": "Dublin",
+    "categoria": "Mercado",
+    "descricao": "carnes brasileiras frescas",
+    "contato": "carnes@acougue.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 32,
+    "nome": "Hair Studio",
+    "cidade": "Dublin",
+    "categoria": "Cabeleireiro",
+    "descricao": "cortes femininos masculinos",
+    "contato": "hair@studio.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 33,
+    "nome": "Dublin Clean Pro",
+    "cidade": "Dublin",
+    "categoria": "Limpeza",
+    "descricao": "limpeza escritórios residências",
+    "contato": "pro@dublinclean.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 34,
+    "nome": "Tapioca Dublin",
+    "cidade": "Dublin",
+    "categoria": "Restaurante",
+    "descricao": "tapioca recheios variados",
+    "contato": "tapioca@dublin.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 35,
+    "nome": "Consultoria Tax",
+    "cidade": "Dublin",
+    "categoria": "Contador",
+    "descricao": "consultoria fiscal irlandesa",
+    "contato": "consultoria@tax.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 36,
+    "nome": "Padaria Brasileira",
+    "cidade": "Dublin",
+    "categoria": "Mercado",
+    "descricao": "pães doces brasileiros",
+    "contato": "padaria@brasileira.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 37,
+    "nome": "Salão Trends",
+    "cidade": "Dublin",
+    "categoria": "Cabeleireiro",
+    "descricao": "tendências cabelo internacional",
+    "contato": "salao@trends.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 38,
+    "nome": "Restaurante Mineiro",
+    "cidade": "Dublin",
+    "categoria": "Restaurante",
+    "descricao": "comida mineira tradicional",
+    "contato": "mineiro@restaurante.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 39,
+    "nome": "Spa Brasileiro",
+    "cidade": "Dublin",
+    "categoria": "Manicure",
+    "descricao": "tratamentos relaxantes brasileiros",
+    "contato": "spa@brasileiro.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 40,
+    "nome": "Learn English BR",
+    "cidade": "Dublin",
+    "categoria": "Aulas",
+    "descricao": "aulas inglês para brasileiros",
+    "contato": "learn@englishbr.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 41,
+    "nome": "Restaurante Andaluz",
+    "cidade": "Madrid",
+    "categoria": "Restaurante",
+    "descricao": "fusão brasil espanha",
+    "contato": "andaluz@madrid.es",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 42,
+    "nome": "Belleza Madrid",
+    "cidade": "Madrid",
+    "categoria": "Manicure",
+    "descricao": "beleza brasileira madrid",
+    "contato": "belleza@madrid.es",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 43,
+    "nome": "Supermercado Brasil",
+    "cidade": "Madrid",
+    "categoria": "Mercado",
+    "descricao": "produtos brasileiros madrid",
+    "contato": "super@brasil.es",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 44,
+    "nome": "Consultoría Brasil",
+    "cidade": "Madrid",
+    "categoria": "Contador",
+    "descricao": "consultoria fiscal online",
+    "contato": "consultoria@brasil.es",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 45,
+    "nome": "Peluquería Brasileña",
+    "cidade": "Madrid",
+    "categoria": "Cabeleireiro",
+    "descricao": "peluquería estilo brasileiro",
+    "contato": "pelo@brasilena.es",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 46,
+    "nome": "Clases Español",
+    "cidade": "Madrid",
+    "categoria": "Aulas",
+    "descricao": "clases español brasileños",
+    "contato": "clases@espanol.es",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 47,
+    "nome": "Limpieza Madrid",
+    "cidade": "Madrid",
+    "categoria": "Limpeza",
+    "descricao": "limpieza hogar madrid",
+    "contato": "limpieza@madrid.es",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 48,
+    "nome": "Churrasco Madrid",
+    "cidade": "Madrid",
+    "categoria": "Restaurante",
+    "descricao": "churrasco brasileiro madrid",
+    "contato": "churrasco@madrid.es",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 49,
+    "nome": "Nails Arte",
+    "cidade": "Madrid",
+    "categoria": "Manicure",
+    "descricao": "arte uñas brasileña",
+    "contato": "nails@arte.es",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 50,
+    "nome": "Mercado Tropical",
+    "cidade": "Madrid",
+    "categoria": "Mercado",
+    "descricao": "frutas tropicales brasileñas",
+    "contato": "mercado@tropical.es",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 51,
+    "nome": "Salón Brasil",
+    "cidade": "Madrid",
+    "categoria": "Cabeleireiro",
+    "descricao": "salón brasileiro madrid",
+    "contato": "salon@brasil.es",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 52,
+    "nome": "Açaí Madrid",
+    "cidade": "Madrid",
+    "categoria": "Restaurante",
+    "descricao": "açaí bowls madrid",
+    "contato": "acai@madrid.es",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 53,
+    "nome": "Clean House ES",
+    "cidade": "Madrid",
+    "categoria": "Limpeza",
+    "descricao": "limpieza casas madrid",
+    "contato": "clean@housees.es",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 54,
+    "nome": "Barbería Brasileña",
+    "cidade": "Madrid",
+    "categoria": "Cabeleireiro",
+    "descricao": "barbería estilo brasileiro",
+    "contato": "barberia@brasilena.es",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 55,
+    "nome": "Coxinha House",
+    "cidade": "Madrid",
+    "categoria": "Restaurante",
+    "descricao": "coxinhas salgados brasileños",
+    "contato": "coxinha@house.es",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 56,
+    "nome": "Contabilidad Digital",
+    "cidade": "Madrid",
+    "categoria": "Contador",
+    "descricao": "contabilidad online brasileños",
+    "contato": "digital@contabilidad.es",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 57,
+    "nome": "Beauty Studio",
+    "cidade": "Madrid",
+    "categoria": "Manicure",
+    "descricao": "estudio belleza brasileña",
+    "contato": "beauty@studio.es",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 58,
+    "nome": "Tienda Brasileña",
+    "cidade": "Madrid",
+    "categoria": "Mercado",
+    "descricao": "tienda productos brasil",
+    "contato": "tienda@brasilena.es",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 59,
+    "nome": "Academia Idiomas",
+    "cidade": "Madrid",
+    "categoria": "Aulas",
+    "descricao": "academia idiomas madrid",
+    "contato": "academia@idiomas.es",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 60,
+    "nome": "Café Brasileiro",
+    "cidade": "Madrid",
+    "categoria": "Restaurante",
+    "descricao": "café brasileiro madrid",
+    "contato": "cafe@brasileiro.es",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 61,
+    "nome": "Cantina Barcelona",
+    "cidade": "Barcelona",
+    "categoria": "Restaurante",
+    "descricao": "comida brasileira barcelona",
+    "contato": "cantina@barcelona.es",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 62,
+    "nome": "Belleza BCN",
+    "cidade": "Barcelona",
+    "categoria": "Manicure",
+    "descricao": "salón belleza barcelonés",
+    "contato": "belleza@bcn.es",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 63,
+    "nome": "Market Brasil",
+    "cidade": "Barcelona",
+    "categoria": "Mercado",
+    "descricao": "mercado produtos brasileiros",
+    "contato": "market@brasil.es",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 64,
+    "nome": "Gestoria Barcelona",
+    "cidade": "Barcelona",
+    "categoria": "Contador",
+    "descricao": "gestoria fiscal barcelona",
+    "contato": "gestoria@barcelona.es",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 65,
+    "nome": "Hair Barcelona",
+    "cidade": "Barcelona",
+    "categoria": "Cabeleireiro",
+    "descricao": "peluquería barcelona brasileña",
+    "contato": "hair@barcelona.es",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 66,
+    "nome": "Catalán Classes",
+    "cidade": "Barcelona",
+    "categoria": "Aulas",
+    "descricao": "clases catalán brasileños",
+    "contato": "catalan@classes.es",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 67,
+    "nome": "Limpieza Barcelona",
+    "cidade": "Barcelona",
+    "categoria": "Limpeza",
+    "descricao": "servicio limpieza barcelona",
+    "contato": "limpieza@barcelona.es",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 68,
+    "nome": "Rodizio Barcelona",
+    "cidade": "Barcelona",
+    "categoria": "Restaurante",
+    "descricao": "rodizio carnes barcelona",
+    "contato": "rodizio@barcelona.es",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 69,
+    "nome": "Nails Barcelona",
+    "cidade": "Barcelona",
+    "categoria": "Manicure",
+    "descricao": "estudio uñas barcelona",
+    "contato": "nails@barcelona.es",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 70,
+    "nome": "Delicatessen Brasil",
+    "cidade": "Barcelona",
+    "categoria": "Mercado",
+    "descricao": "delicatessen brasileña barcelona",
+    "contato": "delicatessen@brasil.es",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 71,
+    "nome": "Barberia Moderna",
+    "cidade": "Barcelona",
+    "categoria": "Cabeleireiro",
+    "descricao": "barbería moderna barcelona",
+    "contato": "barberia@moderna.es",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 72,
+    "nome": "Tapioca Barcelona",
+    "cidade": "Barcelona",
+    "categoria": "Restaurante",
+    "descricao": "tapiocas barcelona",
+    "contato": "tapioca@barcelona.es",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 73,
+    "nome": "Clean BCN",
+    "cidade": "Barcelona",
+    "categoria": "Limpeza",
+    "descricao": "limpieza profesional bcn",
+    "contato": "clean@bcn.es",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 74,
+    "nome": "Salón Brasileño",
+    "cidade": "Barcelona",
+    "categoria": "Cabeleireiro",
+    "descricao": "salón estilo brasileño",
+    "contato": "salon@brasileno.es",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 75,
+    "nome": "Brigadeiros BCN",
+    "cidade": "Barcelona",
+    "categoria": "Restaurante",
+    "descricao": "brigadeiros artesanales barcelona",
+    "contato": "brigadeiros@bcn.es",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 76,
+    "nome": "Tax Barcelona",
+    "cidade": "Barcelona",
+    "categoria": "Contador",
+    "descricao": "asesoría fiscal barcelona",
+    "contato": "tax@barcelona.es",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 77,
+    "nome": "Spa Relax",
+    "cidade": "Barcelona",
+    "categoria": "Manicure",
+    "descricao": "spa relajación barcelona",
+    "contato": "spa@relax.es",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 78,
+    "nome": "Escola Português",
+    "cidade": "Barcelona",
+    "categoria": "Aulas",
+    "descricao": "escola português barcelona",
+    "contato": "escola@portugues.es",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 79,
+    "nome": "Supermercado Brasileiro",
+    "cidade": "Barcelona",
+    "categoria": "Mercado",
+    "descricao": "supermercado brasileiro bcn",
+    "contato": "super@brasileiro.es",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 80,
+    "nome": "Pizzaria Catalana",
+    "cidade": "Barcelona",
+    "categoria": "Restaurante",
+    "descricao": "pizza brasileira catalana",
+    "contato": "pizzaria@catalana.es",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 81,
+    "nome": "Bistro Brasil",
+    "cidade": "Paris",
+    "categoria": "Restaurante",
+    "descricao": "bistro brasileiro paris",
+    "contato": "bistro@brasil.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 82,
+    "nome": "Beauté Brésilienne",
+    "cidade": "Paris",
+    "categoria": "Manicure",
+    "descricao": "beauté brésilienne paris",
+    "contato": "beaute@bresilienne.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 83,
+    "nome": "Marché Brésil",
+    "cidade": "Paris",
+    "categoria": "Mercado",
+    "descricao": "marché produits brésiliens",
+    "contato": "marche@bresil.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 84,
+    "nome": "Comptabilité France",
+    "cidade": "Paris",
+    "categoria": "Contador",
+    "descricao": "comptabilité brésiliens online",
+    "contato": "comptabilite@france.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 85,
+    "nome": "Coiffure Brésil",
+    "cidade": "Paris",
+    "categoria": "Cabeleireiro",
+    "descricao": "coiffure style brésilien",
+    "contato": "coiffure@bresil.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 86,
+    "nome": "Cours Français",
+    "cidade": "Paris",
+    "categoria": "Aulas",
+    "descricao": "cours français online",
+    "contato": "cours@francais.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 87,
+    "nome": "Ménage Paris",
+    "cidade": "Paris",
+    "categoria": "Limpeza",
+    "descricao": "ménage domicile paris",
+    "contato": "menage@paris.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 88,
+    "nome": "Creperie Brasileira",
+    "cidade": "Paris",
+    "categoria": "Restaurante",
+    "descricao": "crêpes brasileiras paris",
+    "contato": "creperie@brasileira.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 89,
+    "nome": "Ongles Brasil",
+    "cidade": "Paris",
+    "categoria": "Manicure",
+    "descricao": "ongles art brésilien",
+    "contato": "ongles@brasil.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 90,
+    "nome": "Épicerie Tropicale",
+    "cidade": "Paris",
+    "categoria": "Mercado",
+    "descricao": "épicerie produits tropicaux",
+    "contato": "epicerie@tropicale.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 91,
+    "nome": "Salon Cheveux",
+    "cidade": "Paris",
+    "categoria": "Cabeleireiro",
+    "descricao": "salon cheveux brésiliens",
+    "contato": "salon@cheveux.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 92,
+    "nome": "Tapiocaria Paris",
+    "cidade": "Paris",
+    "categoria": "Restaurante",
+    "descricao": "tapioca française paris",
+    "contato": "tapiocaria@paris.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 93,
+    "nome": "Nettoyage Pro",
+    "cidade": "Paris",
+    "categoria": "Limpeza",
+    "descricao": "nettoyage professionnel paris",
+    "contato": "nettoyage@pro.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 94,
+    "nome": "Barbier Brésilien",
+    "cidade": "Paris",
+    "categoria": "Cabeleireiro",
+    "descricao": "barbier style brésilien",
+    "contato": "barbier@bresilien.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 95,
+    "nome": "Brigadeiro Café",
+    "cidade": "Paris",
+    "categoria": "Restaurante",
+    "descricao": "brigadeiros café paris",
+    "contato": "brigadeiro@cafe.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 96,
+    "nome": "Expert Comptable",
+    "cidade": "Paris",
+    "categoria": "Contador",
+    "descricao": "expert comptable brésiliens",
+    "contato": "expert@comptable.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 97,
+    "nome": "Spa Beauté",
+    "cidade": "Paris",
+    "categoria": "Manicure",
+    "descricao": "spa beauté brésilienne",
+    "contato": "spa@beaute.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 98,
+    "nome": "Boulangerie Brasileira",
+    "cidade": "Paris",
+    "categoria": "Mercado",
+    "descricao": "boulangerie pains brésiliens",
+    "contato": "boulangerie@brasileira.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 99,
+    "nome": "École Portugais",
+    "cidade": "Paris",
+    "categoria": "Aulas",
+    "descricao": "école portugais paris",
+    "contato": "ecole@portugais.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 100,
+    "nome": "Churrasco Paris",
+    "cidade": "Paris",
+    "categoria": "Restaurante",
+    "descricao": "churrasco brésilien paris",
+    "contato": "churrasco@paris.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 101,
+    "nome": "Café Lyon",
+    "cidade": "Lyon",
+    "categoria": "Restaurante",
+    "descricao": "café brasileiro lyon",
+    "contato": "cafe@lyon.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 102,
+    "nome": "Beauté Lyon",
+    "cidade": "Lyon",
+    "categoria": "Manicure",
+    "descricao": "institut beauté lyon",
+    "contato": "beaute@lyon.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 103,
+    "nome": "Épicerie Brésil",
+    "cidade": "Lyon",
+    "categoria": "Mercado",
+    "descricao": "épicerie brésilienne lyon",
+    "contato": "epicerie@bresil.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 104,
+    "nome": "Comptable Lyon",
+    "cidade": "Lyon",
+    "categoria": "Contador",
+    "descricao": "comptable brésiliens lyon",
+    "contato": "comptable@lyon.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 105,
+    "nome": "Salon Lyon",
+    "cidade": "Lyon",
+    "categoria": "Cabeleireiro",
+    "descricao": "salon coiffure lyon",
+    "contato": "salon@lyon.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 106,
+    "nome": "Français Lyon",
+    "cidade": "Lyon",
+    "categoria": "Aulas",
+    "descricao": "cours français lyon",
+    "contato": "francais@lyon.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 107,
+    "nome": "Ménage Lyon",
+    "cidade": "Lyon",
+    "categoria": "Limpeza",
+    "descricao": "service ménage lyon",
+    "contato": "menage@lyon.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 108,
+    "nome": "Feijoada Lyon",
+    "cidade": "Lyon",
+    "categoria": "Restaurante",
+    "descricao": "feijoada traditionnelle lyon",
+    "contato": "feijoada@lyon.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 109,
+    "nome": "Ongles Lyon",
+    "cidade": "Lyon",
+    "categoria": "Manicure",
+    "descricao": "institut ongles lyon",
+    "contato": "ongles@lyon.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 110,
+    "nome": "Marché Lyon",
+    "cidade": "Lyon",
+    "categoria": "Mercado",
+    "descricao": "marché brésilien lyon",
+    "contato": "marche@lyon.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 111,
+    "nome": "Coiffeur Lyon",
+    "cidade": "Lyon",
+    "categoria": "Cabeleireiro",
+    "descricao": "coiffeur brésilien lyon",
+    "contato": "coiffeur@lyon.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 112,
+    "nome": "Açaí Lyon",
+    "cidade": "Lyon",
+    "categoria": "Restaurante",
+    "descricao": "açaí bowls lyon",
+    "contato": "acai@lyon.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 113,
+    "nome": "Clean Lyon",
+    "cidade": "Lyon",
+    "categoria": "Limpeza",
+    "descricao": "nettoyage lyon",
+    "contato": "clean@lyon.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 114,
+    "nome": "Barbier Lyon",
+    "cidade": "Lyon",
+    "categoria": "Cabeleireiro",
+    "descricao": "barbier moderne lyon",
+    "contato": "barbier@lyon.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 115,
+    "nome": "Pâtisserie Brasileira",
+    "cidade": "Lyon",
+    "categoria": "Restaurante",
+    "descricao": "pâtisserie brésilienne lyon",
+    "contato": "patisserie@brasileira.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 116,
+    "nome": "Fiscal Lyon",
+    "cidade": "Lyon",
+    "categoria": "Contador",
+    "descricao": "conseil fiscal lyon",
+    "contato": "fiscal@lyon.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 117,
+    "nome": "Spa Lyon",
+    "cidade": "Lyon",
+    "categoria": "Manicure",
+    "descricao": "spa détente lyon",
+    "contato": "spa@lyon.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 118,
+    "nome": "Supermarché Brésil",
+    "cidade": "Lyon",
+    "categoria": "Mercado",
+    "descricao": "supermarché brésilien lyon",
+    "contato": "supermarche@bresil.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 119,
+    "nome": "Portugais Lyon",
+    "cidade": "Lyon",
+    "categoria": "Aulas",
+    "descricao": "cours portugais lyon",
+    "contato": "portugais@lyon.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 120,
+    "nome": "Restaurant Brésilien",
+    "cidade": "Lyon",
+    "categoria": "Restaurante",
+    "descricao": "restaurant brésilien lyon",
+    "contato": "restaurant@bresilien.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 121,
+    "nome": "Coxinha Marseille",
+    "cidade": "Marseille",
+    "categoria": "Restaurante",
+    "descricao": "coxinhas marseille",
+    "contato": "coxinha@marseille.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 122,
+    "nome": "Beauté Marseille",
+    "cidade": "Marseille",
+    "categoria": "Manicure",
+    "descricao": "beauté brésilienne marseille",
+    "contato": "beaute@marseille.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 123,
+    "nome": "Marché Tropicaux",
+    "cidade": "Marseille",
+    "categoria": "Mercado",
+    "descricao": "marché produits tropicaux",
+    "contato": "marche@tropicaux.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 124,
+    "nome": "Comptable Marseille",
+    "cidade": "Marseille",
+    "categoria": "Contador",
+    "descricao": "comptable marseille",
+    "contato": "comptable@marseille.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 125,
+    "nome": "Salon Marseille",
+    "cidade": "Marseille",
+    "categoria": "Cabeleireiro",
+    "descricao": "salon coiffure marseille",
+    "contato": "salon@marseille.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 126,
+    "nome": "École Française",
+    "cidade": "Marseille",
+    "categoria": "Aulas",
+    "descricao": "école française marseille",
+    "contato": "ecole@francaise.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 127,
+    "nome": "Ménage Marseille",
+    "cidade": "Marseille",
+    "categoria": "Limpeza",
+    "descricao": "ménage domicile marseille",
+    "contato": "menage@marseille.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 128,
+    "nome": "Churrasco Marseille",
+    "cidade": "Marseille",
+    "categoria": "Restaurante",
+    "descricao": "churrasco marseille",
+    "contato": "churrasco@marseille.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 129,
+    "nome": "Ongles Marseille",
+    "cidade": "Marseille",
+    "categoria": "Manicure",
+    "descricao": "ongles art marseille",
+    "contato": "ongles@marseille.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 130,
+    "nome": "Épicerie Marseille",
+    "cidade": "Marseille",
+    "categoria": "Mercado",
+    "descricao": "épicerie brésilienne marseille",
+    "contato": "epicerie@marseille.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 131,
+    "nome": "Coiffure Marseille",
+    "cidade": "Marseille",
+    "categoria": "Cabeleireiro",
+    "descricao": "coiffure brésilienne marseille",
+    "contato": "coiffure@marseille.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 132,
+    "nome": "Brigadeiros Marseille",
+    "cidade": "Marseille",
+    "categoria": "Restaurante",
+    "descricao": "brigadeiros marseille",
+    "contato": "brigadeiros@marseille.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 133,
+    "nome": "Clean Marseille",
+    "cidade": "Marseille",
+    "categoria": "Limpeza",
+    "descricao": "nettoyage marseille",
+    "contato": "clean@marseille.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 134,
+    "nome": "Barbier Marseille",
+    "cidade": "Marseille",
+    "categoria": "Cabeleireiro",
+    "descricao": "barbier brésilien marseille",
+    "contato": "barbier@marseille.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 135,
+    "nome": "Café Brasileiro",
+    "cidade": "Marseille",
+    "categoria": "Restaurante",
+    "descricao": "café brasileiro marseille",
+    "contato": "cafe@brasileiro.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 136,
+    "nome": "Fiscal Marseille",
+    "cidade": "Marseille",
+    "categoria": "Contador",
+    "descricao": "conseil fiscal marseille",
+    "contato": "fiscal@marseille.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 137,
+    "nome": "Spa Marseille",
+    "cidade": "Marseille",
+    "categoria": "Manicure",
+    "descricao": "spa bien-être marseille",
+    "contato": "spa@marseille.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 138,
+    "nome": "Boulangerie Marseille",
+    "cidade": "Marseille",
+    "categoria": "Mercado",
+    "descricao": "boulangerie brésilienne marseille",
+    "contato": "boulangerie@marseille.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 139,
+    "nome": "Langue Française",
+    "cidade": "Marseille",
+    "categoria": "Aulas",
+    "descricao": "cours langue française",
+    "contato": "langue@francaise.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 140,
+    "nome": "Tapioca Marseille",
+    "cidade": "Marseille",
+    "categoria": "Restaurante",
+    "descricao": "tapioca marseille",
+    "contato": "tapioca@marseille.fr",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 141,
+    "nome": "Tasca Brasileira",
+    "cidade": "Lisboa",
+    "categoria": "Restaurante",
+    "descricao": "tasca comida brasileira",
+    "contato": "tasca@brasileira.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 142,
+    "nome": "Beleza Lisboa",
+    "cidade": "Lisboa",
+    "categoria": "Manicure",
+    "descricao": "beleza brasileira lisboa",
+    "contato": "beleza@lisboa.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 143,
+    "nome": "Mercearia Brasil",
+    "cidade": "Lisboa",
+    "categoria": "Mercado",
+    "descricao": "mercearia produtos brasileiros",
+    "contato": "mercearia@brasil.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 144,
+    "nome": "Contabilidade Online",
+    "cidade": "Lisboa",
+    "categoria": "Contador",
+    "descricao": "contabilidade brasileiros online",
+    "contato": "contabilidade@online.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 145,
+    "nome": "Cabeleireiro Brasileiro",
+    "cidade": "Lisboa",
+    "categoria": "Cabeleireiro",
+    "descricao": "cabeleireiro estilo brasileiro",
+    "contato": "cabelo@brasileiro.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 146,
+    "nome": "Aulas Português",
+    "cidade": "Lisboa",
+    "categoria": "Aulas",
+    "descricao": "aulas português online",
+    "contato": "aulas@portugues.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 147,
+    "nome": "Limpeza Lisboa",
+    "cidade": "Lisboa",
+    "categoria": "Limpeza",
+    "descricao": "limpeza doméstica lisboa",
+    "contato": "limpeza@lisboa.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 148,
+    "nome": "Pizzaria Brasileira",
+    "cidade": "Lisboa",
+    "categoria": "Restaurante",
+    "descricao": "pizza brasileira lisboa",
+    "contato": "pizzaria@brasileira.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 149,
+    "nome": "Unhas Perfeitas",
+    "cidade": "Lisboa",
+    "categoria": "Manicure",
+    "descricao": "unhas perfeitas lisboa",
+    "contato": "unhas@perfeitas.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 150,
+    "nome": "Salão Brasil",
+    "cidade": "Lisboa",
+    "categoria": "Cabeleireiro",
+    "descricao": "salão brasileiro lisboa",
+    "contato": "salao@brasil.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 151,
+    "nome": "Frutaria Tropical",
+    "cidade": "Lisboa",
+    "categoria": "Mercado",
+    "descricao": "frutas tropicais brasileiras",
+    "contato": "frutaria@tropical.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 152,
+    "nome": "Açaí Lisboa",
+    "cidade": "Lisboa",
+    "categoria": "Restaurante",
+    "descricao": "açaí bowls lisboa",
+    "contato": "acai@lisboa.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 153,
+    "nome": "Clean Service",
+    "cidade": "Lisboa",
+    "categoria": "Limpeza",
+    "descricao": "serviços limpeza lisboa",
+    "contato": "clean@service.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 154,
+    "nome": "Barberia Portuguesa",
+    "cidade": "Lisboa",
+    "categoria": "Cabeleireiro",
+    "descricao": "barbearia portuguesa moderna",
+    "contato": "barberia@portuguesa.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 155,
+    "nome": "Brigadeiros Lisboa",
+    "cidade": "Lisboa",
+    "categoria": "Restaurante",
+    "descricao": "brigadeiros artesanais lisboa",
+    "contato": "brigadeiros@lisboa.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 156,
+    "nome": "Gestão Fiscal",
+    "cidade": "Lisboa",
+    "categoria": "Contador",
+    "descricao": "gestão fiscal empresas",
+    "contato": "gestao@fiscal.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 157,
+    "nome": "Spa Relaxante",
+    "cidade": "Lisboa",
+    "categoria": "Manicure",
+    "descricao": "spa relaxante lisboa",
+    "contato": "spa@relaxante.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 158,
+    "nome": "Escola Brasileira",
+    "cidade": "Lisboa",
+    "categoria": "Aulas",
+    "descricao": "escola brasileira lisboa",
+    "contato": "escola@brasileira.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 159,
+    "nome": "Padaria do Brasil",
+    "cidade": "Lisboa",
+    "categoria": "Mercado",
+    "descricao": "padaria brasileira lisboa",
+    "contato": "padaria@brasil.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 160,
+    "nome": "Churrasco Lisboa",
+    "cidade": "Lisboa",
+    "categoria": "Restaurante",
+    "descricao": "churrasco brasileiro lisboa",
+    "contato": "churrasco@lisboa.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 161,
+    "nome": "Brasília Porto",
+    "cidade": "Porto",
+    "categoria": "Restaurante",
+    "descricao": "comida brasiliense porto",
+    "contato": "brasilia@porto.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 162,
+    "nome": "Beauty Porto",
+    "cidade": "Porto",
+    "categoria": "Manicure",
+    "descricao": "estética brasileira porto",
+    "contato": "beauty@porto.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 163,
+    "nome": "Market Porto",
+    "cidade": "Porto",
+    "categoria": "Mercado",
+    "descricao": "market brasileiro porto",
+    "contato": "market@porto.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 164,
+    "nome": "Fiscal Porto",
+    "cidade": "Porto",
+    "categoria": "Contador",
+    "descricao": "consultoria fiscal porto",
+    "contato": "fiscal@porto.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 165,
+    "nome": "Hair Porto",
+    "cidade": "Porto",
+    "categoria": "Cabeleireiro",
+    "descricao": "cabeleireiro porto",
+    "contato": "hair@porto.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 166,
+    "nome": "Porto Language",
+    "cidade": "Porto",
+    "categoria": "Aulas",
+    "descricao": "aulas idiomas porto",
+    "contato": "language@porto.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 167,
+    "nome": "Clean Porto",
+    "cidade": "Porto",
+    "categoria": "Limpeza",
+    "descricao": "limpeza residencial porto",
+    "contato": "clean@porto.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 168,
+    "nome": "Feijoada Porto",
+    "cidade": "Porto",
+    "categoria": "Restaurante",
+    "descricao": "feijoada tradicional porto",
+    "contato": "feijoada@porto.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 169,
+    "nome": "Nails Porto",
+    "cidade": "Porto",
+    "categoria": "Manicure",
+    "descricao": "manicure pedicure porto",
+    "contato": "nails@porto.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 170,
+    "nome": "Delicatessen Porto",
+    "cidade": "Porto",
+    "categoria": "Mercado",
+    "descricao": "delicatessen brasileiro porto",
+    "contato": "delicatessen@porto.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 171,
+    "nome": "Salon Porto",
+    "cidade": "Porto",
+    "categoria": "Cabeleireiro",
+    "descricao": "salão moderno porto",
+    "contato": "salon@porto.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 172,
+    "nome": "Tapioca Porto",
+    "cidade": "Porto",
+    "categoria": "Restaurante",
+    "descricao": "tapioca gourmet porto",
+    "contato": "tapioca@porto.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 173,
+    "nome": "Limpeza Pro",
+    "cidade": "Porto",
+    "categoria": "Limpeza",
+    "descricao": "limpeza profissional porto",
+    "contato": "pro@limpeza.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 174,
+    "nome": "Barbershop Porto",
+    "cidade": "Porto",
+    "categoria": "Cabeleireiro",
+    "descricao": "barbearia moderna porto",
+    "contato": "barbershop@porto.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 175,
+    "nome": "Doces Porto",
+    "cidade": "Porto",
+    "categoria": "Restaurante",
+    "descricao": "doces brasileiros porto",
+    "contato": "doces@porto.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 176,
+    "nome": "Contabilista Porto",
+    "cidade": "Porto",
+    "categoria": "Contador",
+    "descricao": "contabilista online porto",
+    "contato": "contabilista@porto.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 177,
+    "nome": "Wellness Porto",
+    "cidade": "Porto",
+    "categoria": "Manicure",
+    "descricao": "centro wellness porto",
+    "contato": "wellness@porto.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 178,
+    "nome": "Escola Porto",
+    "cidade": "Porto",
+    "categoria": "Aulas",
+    "descricao": "escola online porto",
+    "contato": "escola@porto.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 179,
+    "nome": "Super Porto",
+    "cidade": "Porto",
+    "categoria": "Mercado",
+    "descricao": "supermercado brasileiro porto",
+    "contato": "super@porto.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 180,
+    "nome": "Grill Porto",
+    "cidade": "Porto",
+    "categoria": "Restaurante",
+    "descricao": "grill brasileiro porto",
+    "contato": "grill@porto.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 181,
+    "nome": "Café Braga",
+    "cidade": "Braga",
+    "categoria": "Restaurante",
+    "descricao": "café brasileiro braga",
+    "contato": "cafe@braga.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 182,
+    "nome": "Beleza Braga",
+    "cidade": "Braga",
+    "categoria": "Manicure",
+    "descricao": "centro beleza braga",
+    "contato": "beleza@braga.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 183,
+    "nome": "Loja Brasil",
+    "cidade": "Braga",
+    "categoria": "Mercado",
+    "descricao": "loja produtos brasileiros",
+    "contato": "loja@brasil.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 184,
+    "nome": "Conta Braga",
+    "cidade": "Braga",
+    "categoria": "Contador",
+    "descricao": "contabilidade braga",
+    "contato": "conta@braga.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 185,
+    "nome": "Cabelo Braga",
+    "cidade": "Braga",
+    "categoria": "Cabeleireiro",
+    "descricao": "salão cabelo braga",
+    "contato": "cabelo@braga.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 186,
+    "nome": "Aprende Braga",
+    "cidade": "Braga",
+    "categoria": "Aulas",
+    "descricao": "centro aprendizagem braga",
+    "contato": "aprende@braga.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 187,
+    "nome": "Limpa Braga",
+    "cidade": "Braga",
+    "categoria": "Limpeza",
+    "descricao": "serviços limpeza braga",
+    "contato": "limpa@braga.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 188,
+    "nome": "Sabor Braga",
+    "cidade": "Braga",
+    "categoria": "Restaurante",
+    "descricao": "sabores brasileiros braga",
+    "contato": "sabor@braga.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 189,
+    "nome": "Unha Braga",
+    "cidade": "Braga",
+    "categoria": "Manicure",
+    "descricao": "estudio unhas braga",
+    "contato": "unha@braga.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 190,
+    "nome": "Mercado Braga",
+    "cidade": "Braga",
+    "categoria": "Mercado",
+    "descricao": "mercado brasileiro braga",
+    "contato": "mercado@braga.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 191,
+    "nome": "Style Braga",
+    "cidade": "Braga",
+    "categoria": "Cabeleireiro",
+    "descricao": "style brasileiro braga",
+    "contato": "style@braga.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 192,
+    "nome": "Coxinha Braga",
+    "cidade": "Braga",
+    "categoria": "Restaurante",
+    "descricao": "coxinhas tradicionais braga",
+    "contato": "coxinha@braga.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 193,
+    "nome": "Clean Braga",
+    "cidade": "Braga",
+    "categoria": "Limpeza",
+    "descricao": "limpeza doméstica braga",
+    "contato": "clean@braga.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 194,
+    "nome": "Barber Braga",
+    "cidade": "Braga",
+    "categoria": "Cabeleireiro",
+    "descricao": "barbearia braga",
+    "contato": "barber@braga.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 195,
+    "nome": "Sweet Braga",
+    "cidade": "Braga",
+    "categoria": "Restaurante",
+    "descricao": "doces brasileiros braga",
+    "contato": "sweet@braga.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 196,
+    "nome": "Tax Braga",
+    "cidade": "Braga",
+    "categoria": "Contador",
+    "descricao": "consultoria fiscal braga",
+    "contato": "tax@braga.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 197,
+    "nome": "Spa Braga",
+    "cidade": "Braga",
+    "categoria": "Manicure",
+    "descricao": "spa relaxamento braga",
+    "contato": "spa@braga.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 198,
+    "nome": "Ensino Braga",
+    "cidade": "Braga",
+    "categoria": "Aulas",
+    "descricao": "centro ensino braga",
+    "contato": "ensino@braga.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 199,
+    "nome": "Shop Braga",
+    "cidade": "Braga",
+    "categoria": "Mercado",
+    "descricao": "shop brasileiro braga",
+    "contato": "shop@braga.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 200,
+    "nome": "Grill Braga",
+    "cidade": "Braga",
+    "categoria": "Restaurante",
+    "descricao": "grilled brasileiro braga",
+    "contato": "grill@braga.pt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 201,
+    "nome": "Brazil Malta",
+    "cidade": "Sliema",
+    "categoria": "Restaurante",
+    "descricao": "comida brasileira malta",
+    "contato": "brazil@malta.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 202,
+    "nome": "Beauty Sliema",
+    "cidade": "Sliema",
+    "categoria": "Manicure",
+    "descricao": "beleza brasileira sliema",
+    "contato": "beauty@sliema.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 203,
+    "nome": "Market Brasil",
+    "cidade": "Sliema",
+    "categoria": "Mercado",
+    "descricao": "produtos brasil malta",
+    "contato": "market@brasil.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 204,
+    "nome": "Accounting Malta",
+    "cidade": "Sliema",
+    "categoria": "Contador",
+    "descricao": "contabilidade malta online",
+    "contato": "accounting@malta.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 205,
+    "nome": "Hair Malta",
+    "cidade": "Sliema",
+    "categoria": "Cabeleireiro",
+    "descricao": "cabelo brasileiro malta",
+    "contato": "hair@malta.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 206,
+    "nome": "Classes Malta",
+    "cidade": "Sliema",
+    "categoria": "Aulas",
+    "descricao": "aulas inglês online",
+    "contato": "classes@malta.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 207,
+    "nome": "Clean Malta",
+    "cidade": "Sliema",
+    "categoria": "Limpeza",
+    "descricao": "limpeza residencial malta",
+    "contato": "clean@malta.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 208,
+    "nome": "Café Brasileiro",
+    "cidade": "Sliema",
+    "categoria": "Restaurante",
+    "descricao": "café brasileiro malta",
+    "contato": "cafe@brasileiro.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 209,
+    "nome": "Nails Sliema",
+    "cidade": "Sliema",
+    "categoria": "Manicure",
+    "descricao": "manicure sliema malta",
+    "contato": "nails@sliema.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 210,
+    "nome": "Salon Brazilian",
+    "cidade": "Sliema",
+    "categoria": "Cabeleireiro",
+    "descricao": "salão brasileiro malta",
+    "contato": "salon@brazilian.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 211,
+    "nome": "Groceries Malta",
+    "cidade": "Sliema",
+    "categoria": "Mercado",
+    "descricao": "groceries brasileiros malta",
+    "contato": "groceries@malta.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 212,
+    "nome": "Açaí Malta",
+    "cidade": "Sliema",
+    "categoria": "Restaurante",
+    "descricao": "açaí bowls malta",
+    "contato": "acai@malta.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 213,
+    "nome": "Cleaning Service",
+    "cidade": "Sliema",
+    "categoria": "Limpeza",
+    "descricao": "cleaning service malta",
+    "contato": "cleaning@service.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 214,
+    "nome": "Barbershop Malta",
+    "cidade": "Sliema",
+    "categoria": "Cabeleireiro",
+    "descricao": "barbershop brasileiro malta",
+    "contato": "barbershop@malta.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 215,
+    "nome": "Brigadeiros Malta",
+    "cidade": "Sliema",
+    "categoria": "Restaurante",
+    "descricao": "brigadeiros artesanais malta",
+    "contato": "brigadeiros@malta.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 216,
+    "nome": "Tax Malta",
+    "cidade": "Sliema",
+    "categoria": "Contador",
+    "descricao": "tax advisor malta",
+    "contato": "tax@malta.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 217,
+    "nome": "Wellness Malta",
+    "cidade": "Sliema",
+    "categoria": "Manicure",
+    "descricao": "wellness center malta",
+    "contato": "wellness@malta.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 218,
+    "nome": "Language School",
+    "cidade": "Sliema",
+    "categoria": "Aulas",
+    "descricao": "language school malta",
+    "contato": "language@school.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 219,
+    "nome": "Mini Market",
+    "cidade": "Sliema",
+    "categoria": "Mercado",
+    "descricao": "mini market brasileiro",
+    "contato": "mini@market.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 220,
+    "nome": "Churrasquinha Malta",
+    "cidade": "Sliema",
+    "categoria": "Restaurante",
+    "descricao": "churrasquinha malta",
+    "contato": "churrasquinha@malta.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 221,
+    "nome": "Valletta Brasil",
+    "cidade": "Valletta",
+    "categoria": "Restaurante",
+    "descricao": "restaurante brasileiro valletta",
+    "contato": "brasil@valletta.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 222,
+    "nome": "Beauty Valletta",
+    "cidade": "Valletta",
+    "categoria": "Manicure",
+    "descricao": "centro beleza valletta",
+    "contato": "beauty@valletta.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 223,
+    "nome": "Shop Valletta",
+    "cidade": "Valletta",
+    "categoria": "Mercado",
+    "descricao": "shop brasileiro valletta",
+    "contato": "shop@valletta.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 224,
+    "nome": "Finance Valletta",
+    "cidade": "Valletta",
+    "categoria": "Contador",
+    "descricao": "finance advisor valletta",
+    "contato": "finance@valletta.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 225,
+    "nome": "Hair Valletta",
+    "cidade": "Valletta",
+    "categoria": "Cabeleireiro",
+    "descricao": "hair salon valletta",
+    "contato": "hair@valletta.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 226,
+    "nome": "Learn Valletta",
+    "cidade": "Valletta",
+    "categoria": "Aulas",
+    "descricao": "learning center valletta",
+    "contato": "learn@valletta.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 227,
+    "nome": "Clean Valletta",
+    "cidade": "Valletta",
+    "categoria": "Limpeza",
+    "descricao": "cleaning valletta",
+    "contato": "clean@valletta.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 228,
+    "nome": "Feijoada Valletta",
+    "cidade": "Valletta",
+    "categoria": "Restaurante",
+    "descricao": "feijoada valletta malta",
+    "contato": "feijoada@valletta.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 229,
+    "nome": "Nails Valletta",
+    "cidade": "Valletta",
+    "categoria": "Manicure",
+    "descricao": "nail studio valletta",
+    "contato": "nails@valletta.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 230,
+    "nome": "Salon Valletta",
+    "cidade": "Valletta",
+    "categoria": "Cabeleireiro",
+    "descricao": "salon brasileiro valletta",
+    "contato": "salon@valletta.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 231,
+    "nome": "Market Valletta",
+    "cidade": "Valletta",
+    "categoria": "Mercado",
+    "descricao": "brazilian market valletta",
+    "contato": "market@valletta.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 232,
+    "nome": "Tapioca Valletta",
+    "cidade": "Valletta",
+    "categoria": "Restaurante",
+    "descricao": "tapioca house valletta",
+    "contato": "tapioca@valletta.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 233,
+    "nome": "Service Valletta",
+    "cidade": "Valletta",
+    "categoria": "Limpeza",
+    "descricao": "home service valletta",
+    "contato": "service@valletta.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 234,
+    "nome": "Barber Valletta",
+    "cidade": "Valletta",
+    "categoria": "Cabeleireiro",
+    "descricao": "barber shop valletta",
+    "contato": "barber@valletta.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 235,
+    "nome": "Sweets Valletta",
+    "cidade": "Valletta",
+    "categoria": "Restaurante",
+    "descricao": "doces brasileiros valletta",
+    "contato": "sweets@valletta.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 236,
+    "nome": "Advisor Valletta",
+    "cidade": "Valletta",
+    "categoria": "Contador",
+    "descricao": "business advisor valletta",
+    "contato": "advisor@valletta.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 237,
+    "nome": "Spa Valletta",
+    "cidade": "Valletta",
+    "categoria": "Manicure",
+    "descricao": "spa center valletta",
+    "contato": "spa@valletta.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 238,
+    "nome": "Academy Valletta",
+    "cidade": "Valletta",
+    "categoria": "Aulas",
+    "descricao": "language academy valletta",
+    "contato": "academy@valletta.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 239,
+    "nome": "Store Valletta",
+    "cidade": "Valletta",
+    "categoria": "Mercado",
+    "descricao": "brazilian store valletta",
+    "contato": "store@valletta.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 240,
+    "nome": "Grill Valletta",
+    "cidade": "Valletta",
+    "categoria": "Restaurante",
+    "descricao": "brazilian grill valletta",
+    "contato": "grill@valletta.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 241,
+    "nome": "Julian's Brasil",
+    "cidade": "St. Julian's",
+    "categoria": "Restaurante",
+    "descricao": "comida brasileira st julians",
+    "contato": "brasil@julians.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 242,
+    "nome": "Beauty Julian's",
+    "cidade": "St. Julian's",
+    "categoria": "Manicure",
+    "descricao": "beleza st julians",
+    "contato": "beauty@julians.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 243,
+    "nome": "Market Julian's",
+    "cidade": "St. Julian's",
+    "categoria": "Mercado",
+    "descricao": "market brasileiro julians",
+    "contato": "market@julians.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 244,
+    "nome": "Business Julian's",
+    "cidade": "St. Julian's",
+    "categoria": "Contador",
+    "descricao": "business services julians",
+    "contato": "business@julians.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 245,
+    "nome": "Hair Julian's",
+    "cidade": "St. Julian's",
+    "categoria": "Cabeleireiro",
+    "descricao": "hair salon julians",
+    "contato": "hair@julians.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 246,
+    "nome": "Study Julian's",
+    "cidade": "St. Julian's",
+    "categoria": "Aulas",
+    "descricao": "study center julians",
+    "contato": "study@julians.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 247,
+    "nome": "Clean Julian's",
+    "cidade": "St. Julian's",
+    "categoria": "Limpeza",
+    "descricao": "cleaning julians",
+    "contato": "clean@julians.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 248,
+    "nome": "Açaí Julian's",
+    "cidade": "St. Julian's",
+    "categoria": "Restaurante",
+    "descricao": "açaí bar julians",
+    "contato": "acai@julians.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 249,
+    "nome": "Nails Julian's",
+    "cidade": "St. Julian's",
+    "categoria": "Manicure",
+    "descricao": "nail art julians",
+    "contato": "nails@julians.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 250,
+    "nome": "Salon Julian's",
+    "cidade": "St. Julian's",
+    "categoria": "Cabeleireiro",
+    "descricao": "salon julians",
+    "contato": "salon@julians.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 251,
+    "nome": "Shop Julian's",
+    "cidade": "St. Julian's",
+    "categoria": "Mercado",
+    "descricao": "brazilian shop julians",
+    "contato": "shop@julians.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 252,
+    "nome": "Churrasco Julian's",
+    "cidade": "St. Julian's",
+    "categoria": "Restaurante",
+    "descricao": "churrasco julians",
+    "contato": "churrasco@julians.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 253,
+    "nome": "Service Julian's",
+    "cidade": "St. Julian's",
+    "categoria": "Limpeza",
+    "descricao": "home service julians",
+    "contato": "service@julians.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 254,
+    "nome": "Barber Julian's",
+    "cidade": "St. Julian's",
+    "categoria": "Cabeleireiro",
+    "descricao": "barbershop julians",
+    "contato": "barber@julians.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 255,
+    "nome": "Café Julian's",
+    "cidade": "St. Julian's",
+    "categoria": "Restaurante",
+    "descricao": "café brasileiro julians",
+    "contato": "cafe@julians.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 256,
+    "nome": "Fiscal Julian's",
+    "cidade": "St. Julian's",
+    "categoria": "Contador",
+    "descricao": "fiscal advisor julians",
+    "contato": "fiscal@julians.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 257,
+    "nome": "Wellness Julian's",
+    "cidade": "St. Julian's",
+    "categoria": "Manicure",
+    "descricao": "wellness julians",
+    "contato": "wellness@julians.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 258,
+    "nome": "Language Julian's",
+    "cidade": "St. Julian's",
+    "categoria": "Aulas",
+    "descricao": "language school julians",
+    "contato": "language@julians.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 259,
+    "nome": "Store Julian's",
+    "cidade": "St. Julian's",
+    "categoria": "Mercado",
+    "descricao": "brazilian store julians",
+    "contato": "store@julians.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 260,
+    "nome": "Grill Julian's",
+    "cidade": "St. Julian's",
+    "categoria": "Restaurante",
+    "descricao": "brazilian grill julians",
+    "contato": "grill@julians.mt",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 261,
+    "nome": "Cork Galway",
+    "cidade": "Cork",
+    "categoria": "Restaurante",
+    "descricao": "restaurante brasileiro cork",
+    "contato": "cork@galway.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 262,
+    "nome": "Beauty Cork",
+    "cidade": "Cork",
+    "categoria": "Manicure",
+    "descricao": "centro beleza cork",
+    "contato": "beauty@cork.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 263,
+    "nome": "Market Cork",
+    "cidade": "Cork",
+    "categoria": "Mercado",
+    "descricao": "market brasileiro cork",
+    "contato": "market@cork.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 264,
+    "nome": "Tax Cork",
+    "cidade": "Cork",
+    "categoria": "Contador",
+    "descricao": "tax advisor cork",
+    "contato": "tax@cork.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 265,
+    "nome": "Hair Cork",
+    "cidade": "Cork",
+    "categoria": "Cabeleireiro",
+    "descricao": "hair salon cork",
+    "contato": "hair@cork.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 266,
+    "nome": "English Cork",
+    "cidade": "Cork",
+    "categoria": "Aulas",
+    "descricao": "english classes cork",
+    "contato": "english@cork.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 267,
+    "nome": "Clean Cork",
+    "cidade": "Cork",
+    "categoria": "Limpeza",
+    "descricao": "cleaning service cork",
+    "contato": "clean@cork.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 268,
+    "nome": "Feijoada Cork",
+    "cidade": "Cork",
+    "categoria": "Restaurante",
+    "descricao": "feijoada cork",
+    "contato": "feijoada@cork.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 269,
+    "nome": "Nails Cork",
+    "cidade": "Cork",
+    "categoria": "Manicure",
+    "descricao": "nail studio cork",
+    "contato": "nails@cork.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 270,
+    "nome": "Salon Cork",
+    "cidade": "Cork",
+    "categoria": "Cabeleireiro",
+    "descricao": "salon cork",
+    "contato": "salon@cork.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 271,
+    "nome": "Shop Cork",
+    "cidade": "Cork",
+    "categoria": "Mercado",
+    "descricao": "brazilian shop cork",
+    "contato": "shop@cork.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 272,
+    "nome": "Açaí Cork",
+    "cidade": "Cork",
+    "categoria": "Restaurante",
+    "descricao": "açaí bar cork",
+    "contato": "acai@cork.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 273,
+    "nome": "Service Cork",
+    "cidade": "Cork",
+    "categoria": "Limpeza",
+    "descricao": "home service cork",
+    "contato": "service@cork.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 274,
+    "nome": "Barber Cork",
+    "cidade": "Cork",
+    "categoria": "Cabeleireiro",
+    "descricao": "barbershop cork",
+    "contato": "barber@cork.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 275,
+    "nome": "Café Cork",
+    "cidade": "Cork",
+    "categoria": "Restaurante",
+    "descricao": "café brasileiro cork",
+    "contato": "cafe@cork.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 276,
+    "nome": "Accountant Cork",
+    "cidade": "Cork",
+    "categoria": "Contador",
+    "descricao": "accountant cork",
+    "contato": "accountant@cork.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 277,
+    "nome": "Spa Cork",
+    "cidade": "Cork",
+    "categoria": "Manicure",
+    "descricao": "spa cork",
+    "contato": "spa@cork.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 278,
+    "nome": "Learn Cork",
+    "cidade": "Cork",
+    "categoria": "Aulas",
+    "descricao": "learning center cork",
+    "contato": "learn@cork.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 279,
+    "nome": "Store Cork",
+    "cidade": "Cork",
+    "categoria": "Mercado",
+    "descricao": "brazilian store cork",
+    "contato": "store@cork.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 280,
+    "nome": "Grill Cork",
+    "cidade": "Cork",
+    "categoria": "Restaurante",
+    "descricao": "brazilian grill cork",
+    "contato": "grill@cork.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 281,
+    "nome": "Galway Brasil",
+    "cidade": "Galway",
+    "categoria": "Restaurante",
+    "descricao": "comida brasileira galway",
+    "contato": "brasil@galway.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 282,
+    "nome": "Beauty Galway",
+    "cidade": "Galway",
+    "categoria": "Manicure",
+    "descricao": "centro beleza galway",
+    "contato": "beauty@galway.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 283,
+    "nome": "Market Galway",
+    "cidade": "Galway",
+    "categoria": "Mercado",
+    "descricao": "market brasileiro galway",
+    "contato": "market@galway.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 284,
+    "nome": "Tax Galway",
+    "cidade": "Galway",
+    "categoria": "Contador",
+    "descricao": "tax services galway",
+    "contato": "tax@galway.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 285,
+    "nome": "Hair Galway",
+    "cidade": "Galway",
+    "categoria": "Cabeleireiro",
+    "descricao": "hair salon galway",
+    "contato": "hair@galway.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 286,
+    "nome": "English Galway",
+    "cidade": "Galway",
+    "categoria": "Aulas",
+    "descricao": "english school galway",
+    "contato": "english@galway.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 287,
+    "nome": "Clean Galway",
+    "cidade": "Galway",
+    "categoria": "Limpeza",
+    "descricao": "cleaning galway",
+    "contato": "clean@galway.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 288,
+    "nome": "Feijoada Galway",
+    "cidade": "Galway",
+    "categoria": "Restaurante",
+    "descricao": "feijoada tradicional galway",
+    "contato": "feijoada@galway.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 289,
+    "nome": "Nails Galway",
+    "cidade": "Galway",
+    "categoria": "Manicure",
+    "descricao": "nail art galway",
+    "contato": "nails@galway.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 290,
+    "nome": "Salon Galway",
+    "cidade": "Galway",
+    "categoria": "Cabeleireiro",
+    "descricao": "salon brasileiro galway",
+    "contato": "salon@galway.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 291,
+    "nome": "Shop Galway",
+    "cidade": "Galway",
+    "categoria": "Mercado",
+    "descricao": "brazilian shop galway",
+    "contato": "shop@galway.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 292,
+    "nome": "Açaí Galway",
+    "cidade": "Galway",
+    "categoria": "Restaurante",
+    "descricao": "açaí bowls galway",
+    "contato": "acai@galway.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 293,
+    "nome": "Service Galway",
+    "cidade": "Galway",
+    "categoria": "Limpeza",
+    "descricao": "house service galway",
+    "contato": "service@galway.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 294,
+    "nome": "Barber Galway",
+    "cidade": "Galway",
+    "categoria": "Cabeleireiro",
+    "descricao": "barber galway",
+    "contato": "barber@galway.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 295,
+    "nome": "Café Galway",
+    "cidade": "Galway",
+    "categoria": "Restaurante",
+    "descricao": "café brasileiro galway",
+    "contato": "cafe@galway.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 296,
+    "nome": "Finance Galway",
+    "cidade": "Galway",
+    "categoria": "Contador",
+    "descricao": "financial services galway",
+    "contato": "finance@galway.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 297,
+    "nome": "Spa Galway",
+    "cidade": "Galway",
+    "categoria": "Manicure",
+    "descricao": "spa wellness galway",
+    "contato": "spa@galway.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 298,
+    "nome": "Academy Galway",
+    "cidade": "Galway",
+    "categoria": "Aulas",
+    "descricao": "language academy galway",
+    "contato": "academy@galway.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 299,
+    "nome": "Store Galway",
+    "cidade": "Galway",
+    "categoria": "Mercado",
+    "descricao": "brazilian store galway",
+    "contato": "store@galway.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 300,
+    "nome": "Grill Galway",
+    "cidade": "Galway",
+    "categoria": "Restaurante",
+    "descricao": "brazilian grill galway",
+    "contato": "grill@galway.ie",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 301,
+    "nome": "Berlin Brasil",
+    "cidade": "Berlin",
+    "categoria": "Restaurante",
+    "descricao": "restaurante brasileiro berlin",
+    "contato": "brasil@berlin.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 302,
+    "nome": "Schönheit Berlin",
+    "cidade": "Berlin",
+    "categoria": "Manicure",
+    "descricao": "schönheit salon berlin",
+    "contato": "schonheit@berlin.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 303,
+    "nome": "Markt Berlin",
+    "cidade": "Berlin",
+    "categoria": "Mercado",
+    "descricao": "brasilianischer markt berlin",
+    "contato": "markt@berlin.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 304,
+    "nome": "Steuer Berlin",
+    "cidade": "Berlin",
+    "categoria": "Contador",
+    "descricao": "steuerberatung berlin",
+    "contato": "steuer@berlin.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 305,
+    "nome": "Haar Berlin",
+    "cidade": "Berlin",
+    "categoria": "Cabeleireiro",
+    "descricao": "hair salon berlin",
+    "contato": "haar@berlin.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 306,
+    "nome": "Deutsch Berlin",
+    "cidade": "Berlin",
+    "categoria": "Aulas",
+    "descricao": "deutsch kurse berlin",
+    "contato": "deutsch@berlin.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 307,
+    "nome": "Reinigung Berlin",
+    "cidade": "Berlin",
+    "categoria": "Limpeza",
+    "descricao": "reinigungsservice berlin",
+    "contato": "reinigung@berlin.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 308,
+    "nome": "Churrasco Berlin",
+    "cidade": "Berlin",
+    "categoria": "Restaurante",
+    "descricao": "churrasco brasileiro berlin",
+    "contato": "churrasco@berlin.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 309,
+    "nome": "Nägel Berlin",
+    "cidade": "Berlin",
+    "categoria": "Manicure",
+    "descricao": "nagelstudio berlin",
+    "contato": "nagel@berlin.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 310,
+    "nome": "Salon Berlin",
+    "cidade": "Berlin",
+    "categoria": "Cabeleireiro",
+    "descricao": "brasilianischer salon berlin",
+    "contato": "salon@berlin.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 311,
+    "nome": "Laden Berlin",
+    "cidade": "Berlin",
+    "categoria": "Mercado",
+    "descricao": "brasilianischer laden berlin",
+    "contato": "laden@berlin.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 312,
+    "nome": "Açaí Berlin",
+    "cidade": "Berlin",
+    "categoria": "Restaurante",
+    "descricao": "açaí bar berlin",
+    "contato": "acai@berlin.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 313,
+    "nome": "Service Berlin",
+    "cidade": "Berlin",
+    "categoria": "Limpeza",
+    "descricao": "haushaltsservice berlin",
+    "contato": "service@berlin.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 314,
+    "nome": "Barbier Berlin",
+    "cidade": "Berlin",
+    "categoria": "Cabeleireiro",
+    "descricao": "barbershop berlin",
+    "contato": "barbier@berlin.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 315,
+    "nome": "Café Berlin",
+    "cidade": "Berlin",
+    "categoria": "Restaurante",
+    "descricao": "café brasileiro berlin",
+    "contato": "cafe@berlin.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 316,
+    "nome": "Buchhaltung Berlin",
+    "cidade": "Berlin",
+    "categoria": "Contador",
+    "descricao": "buchhaltung berlin",
+    "contato": "buchhaltung@berlin.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 317,
+    "nome": "Wellness Berlin",
+    "cidade": "Berlin",
+    "categoria": "Manicure",
+    "descricao": "wellness center berlin",
+    "contato": "wellness@berlin.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 318,
+    "nome": "Sprachschule Berlin",
+    "cidade": "Berlin",
+    "categoria": "Aulas",
+    "descricao": "sprachschule berlin",
+    "contato": "sprache@berlin.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 319,
+    "nome": "Geschäft Berlin",
+    "cidade": "Berlin",
+    "categoria": "Mercado",
+    "descricao": "brasilianisches geschäft berlin",
+    "contato": "geschaft@berlin.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 320,
+    "nome": "Grill Berlin",
+    "cidade": "Berlin",
+    "categoria": "Restaurante",
+    "descricao": "brazilian grill berlin",
+    "contato": "grill@berlin.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 321,
+    "nome": "München Brasil",
+    "cidade": "Munich",
+    "categoria": "Restaurante",
+    "descricao": "restaurante brasileiro münchen",
+    "contato": "brasil@munchen.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 322,
+    "nome": "Beauty München",
+    "cidade": "Munich",
+    "categoria": "Manicure",
+    "descricao": "beauty salon münchen",
+    "contato": "beauty@munchen.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 323,
+    "nome": "Markt München",
+    "cidade": "Munich",
+    "categoria": "Mercado",
+    "descricao": "brasilianischer markt münchen",
+    "contato": "markt@munchen.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 324,
+    "nome": "Steuer München",
+    "cidade": "Munich",
+    "categoria": "Contador",
+    "descricao": "steuerberatung münchen",
+    "contato": "steuer@munchen.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 325,
+    "nome": "Haar München",
+    "cidade": "Munich",
+    "categoria": "Cabeleireiro",
+    "descricao": "haarsalon münchen",
+    "contato": "haar@munchen.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 326,
+    "nome": "Deutsch München",
+    "cidade": "Munich",
+    "categoria": "Aulas",
+    "descricao": "deutschkurse münchen",
+    "contato": "deutsch@munchen.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 327,
+    "nome": "Putzen München",
+    "cidade": "Munich",
+    "categoria": "Limpeza",
+    "descricao": "putzservice münchen",
+    "contato": "putzen@munchen.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 328,
+    "nome": "Churrasco München",
+    "cidade": "Munich",
+    "categoria": "Restaurante",
+    "descricao": "churrasco münchen",
+    "contato": "churrasco@munchen.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 329,
+    "nome": "Nägel München",
+    "cidade": "Munich",
+    "categoria": "Manicure",
+    "descricao": "nagelstudio münchen",
+    "contato": "nagel@munchen.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 330,
+    "nome": "Salon München",
+    "cidade": "Munich",
+    "categoria": "Cabeleireiro",
+    "descricao": "salon münchen",
+    "contato": "salon@munchen.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 331,
+    "nome": "Shop München",
+    "cidade": "Munich",
+    "categoria": "Mercado",
+    "descricao": "brasilianischer shop münchen",
+    "contato": "shop@munchen.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 332,
+    "nome": "Açaí München",
+    "cidade": "Munich",
+    "categoria": "Restaurante",
+    "descricao": "açaí bar münchen",
+    "contato": "acai@munchen.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 333,
+    "nome": "Service München",
+    "cidade": "Munich",
+    "categoria": "Limpeza",
+    "descricao": "reinigungsservice münchen",
+    "contato": "service@munchen.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 334,
+    "nome": "Barbier München",
+    "cidade": "Munich",
+    "categoria": "Cabeleireiro",
+    "descricao": "barbershop münchen",
+    "contato": "barbier@munchen.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 335,
+    "nome": "Café München",
+    "cidade": "Munich",
+    "categoria": "Restaurante",
+    "descricao": "café brasileiro münchen",
+    "contato": "cafe@munchen.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 336,
+    "nome": "Buchhalter München",
+    "cidade": "Munich",
+    "categoria": "Contador",
+    "descricao": "buchhalter münchen",
+    "contato": "buchhalter@munchen.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 337,
+    "nome": "Wellness München",
+    "cidade": "Munich",
+    "categoria": "Manicure",
+    "descricao": "wellness münchen",
+    "contato": "wellness@munchen.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 338,
+    "nome": "Schule München",
+    "cidade": "Munich",
+    "categoria": "Aulas",
+    "descricao": "sprachschule münchen",
+    "contato": "schule@munchen.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 339,
+    "nome": "Laden München",
+    "cidade": "Munich",
+    "categoria": "Mercado",
+    "descricao": "brasilianischer laden münchen",
+    "contato": "laden@munchen.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 340,
+    "nome": "Grill München",
+    "cidade": "Munich",
+    "categoria": "Restaurante",
+    "descricao": "brazilian grill münchen",
+    "contato": "grill@munchen.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 341,
+    "nome": "Hamburg Brasil",
+    "cidade": "Hamburg",
+    "categoria": "Restaurante",
+    "descricao": "restaurante brasileiro hamburg",
+    "contato": "brasil@hamburg.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 342,
+    "nome": "Beauty Hamburg",
+    "cidade": "Hamburg",
+    "categoria": "Manicure",
+    "descricao": "beauty center hamburg",
+    "contato": "beauty@hamburg.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 343,
+    "nome": "Markt Hamburg",
+    "cidade": "Hamburg",
+    "categoria": "Mercado",
+    "descricao": "brasilianischer markt hamburg",
+    "contato": "markt@hamburg.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 344,
+    "nome": "Steuer Hamburg",
+    "cidade": "Hamburg",
+    "categoria": "Contador",
+    "descricao": "steuerberatung hamburg",
+    "contato": "steuer@hamburg.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 345,
+    "nome": "Haar Hamburg",
+    "cidade": "Hamburg",
+    "categoria": "Cabeleireiro",
+    "descricao": "haarsalon hamburg",
+    "contato": "haar@hamburg.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 346,
+    "nome": "Deutsch Hamburg",
+    "cidade": "Hamburg",
+    "categoria": "Aulas",
+    "descricao": "deutschkurse hamburg",
+    "contato": "deutsch@hamburg.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 347,
+    "nome": "Putzen Hamburg",
+    "cidade": "Hamburg",
+    "categoria": "Limpeza",
+    "descricao": "putzservice hamburg",
+    "contato": "putzen@hamburg.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 348,
+    "nome": "Churrasco Hamburg",
+    "cidade": "Hamburg",
+    "categoria": "Restaurante",
+    "descricao": "churrasco hamburg",
+    "contato": "churrasco@hamburg.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 349,
+    "nome": "Nägel Hamburg",
+    "cidade": "Hamburg",
+    "categoria": "Manicure",
+    "descricao": "nagelstudio hamburg",
+    "contato": "nagel@hamburg.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 350,
+    "nome": "Salon Hamburg",
+    "cidade": "Hamburg",
+    "categoria": "Cabeleireiro",
+    "descricao": "salon hamburg",
+    "contato": "salon@hamburg.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 351,
+    "nome": "Shop Hamburg",
+    "cidade": "Hamburg",
+    "categoria": "Mercado",
+    "descricao": "brasilianischer shop hamburg",
+    "contato": "shop@hamburg.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 352,
+    "nome": "Açaí Hamburg",
+    "cidade": "Hamburg",
+    "categoria": "Restaurante",
+    "descricao": "açaí bar hamburg",
+    "contato": "acai@hamburg.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 353,
+    "nome": "Service Hamburg",
+    "cidade": "Hamburg",
+    "categoria": "Limpeza",
+    "descricao": "hausservice hamburg",
+    "contato": "service@hamburg.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 354,
+    "nome": "Barbier Hamburg",
+    "cidade": "Hamburg",
+    "categoria": "Cabeleireiro",
+    "descricao": "barbershop hamburg",
+    "contato": "barbier@hamburg.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 355,
+    "nome": "Café Hamburg",
+    "cidade": "Hamburg",
+    "categoria": "Restaurante",
+    "descricao": "café brasileiro hamburg",
+    "contato": "cafe@hamburg.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 356,
+    "nome": "Buchhalter Hamburg",
+    "cidade": "Hamburg",
+    "categoria": "Contador",
+    "descricao": "buchhalter hamburg",
+    "contato": "buchhalter@hamburg.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 357,
+    "nome": "Wellness Hamburg",
+    "cidade": "Hamburg",
+    "categoria": "Manicure",
+    "descricao": "wellness hamburg",
+    "contato": "wellness@hamburg.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 358,
+    "nome": "Schule Hamburg",
+    "cidade": "Hamburg",
+    "categoria": "Aulas",
+    "descricao": "sprachschule hamburg",
+    "contato": "schule@hamburg.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 359,
+    "nome": "Laden Hamburg",
+    "cidade": "Hamburg",
+    "categoria": "Mercado",
+    "descricao": "brasilianischer laden hamburg",
+    "contato": "laden@hamburg.de",
+    "logo": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 360,
+    "nome": "Grill Hamburg",
+    "cidade": "Hamburg",
+    "categoria": "Restaurante",
+    "descricao": "brazilian grill hamburg",
+    "contato": "grill@hamburg.de",
+    "logo": "https://via.placeholder.com/150"
+  }
+]

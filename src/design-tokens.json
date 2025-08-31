@@ -1,0 +1,297 @@
+{
+  "project": "Imigrei - Conectando brasileiros no exterior",
+  "version": "1.0.1",
+  "tokens": {
+    "colors": {
+      "brand": {
+        "primary": {
+          "value": "#005a22",
+          "description": "Verde escuro principal - usado para textos, ícones e elementos principais",
+          "usage": ["headers", "text", "icons", "buttons"]
+        },
+        "secondary": {
+          "value": "#ff6c0e",
+          "description": "Laranja - usado para CTAs, botões de ação e destaques",
+          "usage": ["cta-buttons", "highlights", "accent-elements"]
+        },
+        "accent": {
+          "value": "#b0ff0b",
+          "description": "Verde claro - usado para badges, contadores e elementos de destaque",
+          "usage": ["badges", "counters", "accent-backgrounds"]
+        },
+        "background": {
+          "value": "#fff8e2",
+          "description": "Bege - usado como fundo secundário em seções",
+          "usage": ["section-backgrounds", "cards"]
+        },
+        "hover": {
+          "value": "#008934",
+          "description": "Verde hover - estado hover para elementos interativos",
+          "usage": ["button-hover", "link-hover", "interactive-states"]
+        }
+      },
+      "neutral": {
+        "white": {
+          "value": "#ffffff",
+          "description": "Branco - fundo principal e textos em fundos escuros"
+        },
+        "black": {
+          "value": "#000000",
+          "description": "Preto - usado para textos em elementos específicos"
+        },
+        "border": {
+          "value": "rgba(0, 0, 0, 0.1)",
+          "description": "Cinza claro para bordas de cards e separadores"
+        },
+        "gray-light": {
+          "value": "#dedede",
+          "description": "Cinza muito claro para bordas de cards"
+        }
+      },
+      "semantic": {
+        "success": {
+          "value": "#0d9942",
+          "description": "Verde para status positivos (aberto, sucesso)"
+        },
+        "warning": {
+          "value": "#F5C518",
+          "description": "Amarelo para ratings e avisos"
+        },
+        "info": {
+          "value": "#1682B5",
+          "description": "Azul para chips de categoria e informações"
+        }
+      },
+      "opacity": {
+        "text-secondary": {
+          "value": "0.8",
+          "description": "Opacidade para textos secundários"
+        },
+        "text-muted": {
+          "value": "0.7",
+          "description": "Opacidade para textos menos importantes"
+        },
+        "icon-muted": {
+          "value": "0.5",
+          "description": "Opacidade para ícones em estados vazios"
+        }
+      }
+    },
+    "typography": {
+      "fontFamily": {
+        "primary": {
+          "value": "'Manrope', sans-serif",
+          "description": "Fonte principal do projeto - usada em todos os elementos"
+        }
+      },
+      "fontSize": {
+        "base": { "value": "14px", "description": "Tamanho base definido no root" },
+        "xs": { "value": "12px", "description": "Badges, tags, detalhes" },
+        "sm": { "value": "13px", "description": "Status, botões menores" },
+        "md": { "value": "14px", "description": "Texto padrão, botões, labels" },
+        "lg": { "value": "16px", "description": "Títulos de cards, textos importantes" },
+        "xl": { "value": "18px", "description": "Subtítulos de seções" },
+        "2xl": { "value": "28px", "description": "Títulos de seções em mobile" },
+        "3xl": { "value": "32px", "description": "Títulos de seções em desktop" },
+        "4xl": { "value": "36px", "description": "Logo em mobile" },
+        "5xl": { "value": "42px", "description": "Logo em desktop" }
+      },
+      "fontWeight": {
+        "normal": { "value": "400", "description": "Textos descritivos" },
+        "medium": { "value": "500", "description": "Labels e destaques" },
+        "semibold": { "value": "600", "description": "Status e destaques" },
+        "bold": { "value": "700", "description": "Títulos e nomes de negócios" }
+      },
+      "lineHeight": {
+        "none": { "value": "0", "description": "Sem altura de linha (casos específicos)" },
+        "normal": { "value": "normal", "description": "Textos corridos" },
+        "tight": { "value": "19px", "description": "Elementos pequenos" },
+        "relaxed": { "value": "20px", "description": "Títulos de cards" },
+        "loose": { "value": "24px", "description": "Textos longos" }
+      },
+      "letterSpacing": {
+        "default": { "value": "0.45px", "description": "Espaçamento global" }
+      }
+    },
+    "spacing": {
+      "quark": { "value": "2px", "description": "Espaçamento micro" },
+      "2xs": { "value": "4px", "description": "Ícone + texto mínimo" },
+      "xs": { "value": "8px", "description": "Pequeno" },
+      "sm": { "value": "12px", "description": "Badges / chips / botões compactos" },
+      "md": { "value": "16px", "description": "Padding padrão de cards e seções pequenas" },
+      "lg": { "value": "24px", "description": "Entre seções / gaps de grid" },
+      "xl": { "value": "32px", "description": "Entre seções principais" },
+      "2xl": { "value": "48px", "description": "Espaçamento grande" },
+      "3xl": { "value": "64px", "description": "Hero / respiro amplo" },
+      "4xl": { "value": "80px", "description": "Desktop amplo" },
+      "5xl": { "value": "96px", "description": "Máximo (destaques)" },
+      "responsive": {
+        "mobile-padding": { "value": "14px", "description": "Padding lateral padrão em mobile" },
+        "desktop-padding": { "value": "0px", "description": "Sem padding lateral em desktop (usa max-width)" }
+      }
+    },
+    "borderRadius": {
+      "small": { "value": "8px", "description": "Cards e elementos principais" },
+      "medium": { "value": "24px", "description": "Botões e chips" },
+      "large": { "value": "32px", "description": "Elementos de destaque" },
+      "full": { "value": "50%", "description": "Elementos circulares" }
+    },
+    "shadows": {
+      "none": { "value": "none", "description": "Sem sombra (padrão da marca)" },
+      "card-sm": { "value": "0 1px 2px rgba(0,0,0,0.06)", "description": "Sombra sutil para elevação mínima" },
+      "elevated": { "value": "0 4px 12px rgba(0,0,0,0.08)", "description": "Modais/overlays" }
+    },
+    "layout": {
+      "maxWidth": {
+        "card": { "value": "400px", "description": "Largura máxima de cards em desktop" },
+        "grid": { "value": "1200px", "description": "Largura máxima do grid de conteúdo" },
+        "search": { "value": "600px", "description": "Largura máxima do componente de busca" },
+        "content": { "value": "1200px", "description": "Largura máxima de seções de conteúdo" }
+      },
+      "grid": {
+        "mobile": { "value": "1", "description": "1 coluna em mobile" },
+        "tablet": { "value": "2", "description": "2 colunas em tablet" },
+        "desktop": { "value": "3", "description": "3 colunas em desktop" }
+      },
+      "aspectRatio": {
+        "card-image": { "value": "1:1", "description": "Imagens de cards (quadrado)" },
+        "hero-image": { "value": "16:9", "description": "Imagens hero (widescreen)" }
+      }
+    },
+    "iconSizes": {
+      "xs": { "value": "12px", "description": "Ícones extra pequenos" },
+      "sm": { "value": "16px", "description": "Ícones pequenos" },
+      "md": { "value": "20px", "description": "Ícones médios" },
+      "lg": { "value": "24px", "description": "Ícones grandes" },
+      "xl": { "value": "48px", "description": "Ícones de categoria (mobile)" },
+      "2xl": { "value": "64px", "description": "Ícones de categoria (desktop)" },
+      "3xl": { "value": "80px", "description": "Ícones grandes em cards grid" }
+    },
+    "transitions": {
+      "default": {
+        "duration": "150ms",
+        "easing": "ease-in-out",
+        "description": "Transição padrão para hover states"
+      },
+      "colors": {
+        "duration": "150ms",
+        "easing": "ease-in-out",
+        "properties": ["background-color", "color", "border-color"],
+        "description": "Transições de cor em botões e links"
+      }
+    },
+    "breakpoints": {
+      "mobile": { "value": "0px", "description": "Mobile first - ponto inicial" },
+      "tablet": { "value": "640px", "description": "Tablet - sm breakpoint" },
+      "desktop": { "value": "1024px", "description": "Desktop - lg breakpoint" },
+      "wide": { "value": "1280px", "description": "Desktop largo - xl breakpoint" }
+    },
+    "zIndex": {
+      "header": { "value": "50", "description": "Header fixo acima do conteúdo" },
+      "modal": { "value": "100", "description": "Modais e overlays" },
+      "tooltip": { "value": "200", "description": "Tooltips acima de tudo" }
+    },
+    "focus": {
+      "ring-width": { "value": "2px", "description": "Largura do foco" },
+      "ring-color": { "value": "{colors.brand.primary}", "description": "Cor do foco" },
+      "ring-offset": { "value": "2px", "description": "Offset do foco" }
+    }
+  },
+  "usage": {
+    "components": {
+      "BusinessCard": {
+        "colors": ["brand.primary", "brand.secondary", "neutral.white", "neutral.border"],
+        "typography": ["fontSize.md", "fontSize.sm", "fontWeight.bold", "fontWeight.medium"],
+        "spacing": ["sm", "md", "lg"],
+        "borderRadius": ["small"],
+        "shadow": "none"
+      },
+      "Header": {
+        "colors": ["brand.primary", "neutral.white"],
+        "typography": ["fontSize.md", "fontWeight.medium"],
+        "spacing": ["md", "lg"],
+        "layout": ["maxWidth.content"],
+        "zIndex": "header"
+      },
+      "Button": {
+        "typography": ["fontSize.md", "fontWeight.medium"],
+        "spacing": ["sm", "md"],
+        "borderRadius": ["medium"],
+        "transitions": ["colors"],
+        "variants": {
+          "primary": {
+            "background": "{colors.brand.secondary}",
+            "text": "{colors.neutral.white}"
+          },
+          "secondary": {
+            "background": "{colors.brand.primary}",
+            "text": "{colors.neutral.white}"
+          },
+          "tertiary": {
+            "background": "{colors.neutral.white}",
+            "border": "{colors.neutral.border}",
+            "text": "{colors.brand.primary}"
+          }
+        }
+      },
+      "SearchComponent": {
+        "colors": ["neutral.white", "brand.primary", "neutral.border"],
+        "typography": ["fontSize.md", "fontWeight.normal"],
+        "spacing": ["sm", "md"],
+        "borderRadius": ["small", "medium"],
+        "layout": ["maxWidth.search"]
+      }
+    },
+    "patterns": {
+      "hero-section": {
+        "background": "brand.primary",
+        "text": "neutral.white",
+        "spacing": "3xl",
+        "layout": "maxWidth.content"
+      },
+      "card-grid": {
+        "layout": "grid.responsive",
+        "spacing": "md",
+        "maxWidth": "layout.maxWidth.grid"
+      },
+      "chip-navigation": {
+        "background": "rgba(168,212,181,1)",
+        "text": "brand.primary",
+        "borderRadius": "medium",
+        "spacing": "xs"
+      }
+    }
+  },
+  "accessibility": {
+    "contrast": {
+      "primary-on-white": {
+        "ratio": "AA compliant",
+        "colors": ["brand.primary", "neutral.white"]
+      },
+      "white-on-primary": {
+        "ratio": "AA compliant",
+        "colors": ["neutral.white", "brand.primary"]
+      }
+    },
+    "focus": {
+      "ring-width": "{focus.ring-width}",
+      "ring-color": "{focus.ring-color}",
+      "ring-offset": "{focus.ring-offset}"
+    }
+  },
+  "notes": {
+    "global-overrides": [
+      "letter-spacing: 0.45px aplicado globalmente",
+      "Font-family: Manrope aplicada globalmente",
+      "Não usar classes de font-size, font-weight ou line-height do Tailwind (usar apenas quando solicitado)",
+      "Mobile-first: todas as medidas começam mobile e expandem com breakpoints"
+    ],
+    "brand-specifics": [
+      "Verde #005a22 é a cor principal da marca",
+      "Laranja #ff6c0e é usado para CTAs e ações principais",
+      "Verde claro #b0ff0b é usado para acentos e badges",
+      "Bege #fff8e2 é usado como fundo secundário",
+      "Layout sempre mobile-first com foco na experiência móvel"
+    ]
+  }
+}
