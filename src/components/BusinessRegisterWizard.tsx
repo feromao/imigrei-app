@@ -3,8 +3,6 @@ import Header from './Header';
 import { Checkbox } from './ui/checkbox';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from './ui/collapsible';
 import { signInWithGoogle } from '@/features/auth/auth';
-import { useAuth } from '@/hooks/useAuth';
-
 
 type BusinessRegisterWizardProps = {
   onBackToHome: () => void;
@@ -52,13 +50,11 @@ const COUNTRIES_BY_CONTINENT = {
     'República Dominicana', 'Suriname', 'Trinidad e Tobago', 'Uruguai', 'Venezuela'
   ],
   'Europa': [
-    'Alemanha', 'Albânia', 'Andorra', 'Áustria', 'Bélgica', 'Bielorrússia', 'Bósnia e Herzegovina', 
-    'Bulgária', 'Croácia', 'Dinamarca', 'Eslováquia', 'Eslovênia', 'Espanha', 'Estônia', 
-    'Finlândia', 'França', 'Grécia', 'Hungria', 'Irlanda', 'Islândia', 'Itália', 'Kosovo', 
-    'Letônia', 'Liechtenstein', 'Lituânia', 'Luxemburgo', 'Malta', 'Moldávia', 'Mônaco', 
-    'Montenegro', 'Noruega', 'Países Baixos', 'Polônia', 'Portugal', 'Reino Unido', 
-    'República Tcheca', 'Romênia', 'Rússia', 'San Marino', 'Sérvia', 'Suécia', 'Suíça', 
-    'Ucrânia', 'Vaticano'
+    'Alemanha', 'Andorra', 'Áustria', 'Bélgica', 'Bulgária', 'Chipre', 'Croácia', 'Dinamarca', 
+    'Espanha', 'Estônia', 'Finlândia', 'França', 'Grécia', 'Hungria', 'Irlanda', 'Islândia', 
+    'Itália', 'Letônia', 'Liechtenstein', 'Lituânia', 'Luxemburgo', 'Malta', 'Moldávia', 
+    'Mônaco', 'Montenegro', 'Noruega', 'Países Baixos', 'Polônia', 'Portugal', 'Reino Unido', 
+    'República Tcheca', 'Romênia', 'Rússia', 'San Marino', 'Sérvia', 'Suécia', 'Suíça', 'Ucrânia'
   ],
   'África': [
     'África do Sul', 'Angola', 'Argélia', 'Benin', 'Botsuana', 'Burkina Faso', 'Burundi', 
@@ -84,30 +80,49 @@ const COUNTRIES_BY_CONTINENT = {
   ]
 };
 
-const ALL_COUNTRIES = Object.values(COUNTRIES_BY_CONTINENT).flat();
-
-const COUNTRIES = [
-  'Espanha', 'Portugal', 'Irlanda', 'Malta', 'França', 'Alemanha', 
-  'Reino Unido', 'Itália', 'Países Baixos', 'Bélgica', 'Suíça', 'Áustria'
-];
-
 const CATEGORIES = [
-  'Restaurantes', 'Beleza e Estética', 'Saúde', 'Turismo', 'Educação',
-  'Tecnologia', 'Consultoria', 'Limpeza', 'Transporte', 'Comércio',
-  'Serviços Gerais', 'Arte e Cultura', 'Esportes', 'Outros'
+  'Restaurante e Alimentação',
+  'Beleza e Estética',
+  'Construção e Reforma',
+  'Tecnologia e Informática',
+  'Saúde e Bem-estar',
+  'Educação e Cursos',
+  'Consultoria e Serviços',
+  'Comércio e Varejo',
+  'Turismo e Viagem',
+  'Arte e Cultura',
+  'Transporte e Logística',
+  'Imobiliário',
+  'Financeiro e Contabilidade',
+  'Jurídico',
+  'Marketing e Publicidade',
+  'Automóveis',
+  'Pets e Animais',
+  'Esportes e Lazer',
+  'Moda e Vestuário',
+  'Casa e Decoração',
+  'Fotografia e Vídeo',
+  'Música e Entretenimento',
+  'Serviços Domésticos',
+  'Agricultura e Pecuária',
+  'Indústria e Manufatura'
 ];
 
 function StepIndicator({ currentStep, totalSteps }: { currentStep: number; totalSteps: number }) {
   return (
-    <div className="flex items-center justify-center gap-2 mb-8">
-      {Array.from({ length: totalSteps }, (_, i) => (
-        <div
-          key={i}
-          className={`h-2 w-8 rounded-full transition-colors ${
-            i + 1 <= currentStep ? 'bg-[#005a22]' : 'bg-gray-200'
-          }`}
-        />
-      ))}
+    <div className="flex justify-center mb-8">
+      <div className="flex space-x-2">
+        {Array.from({ length: totalSteps }, (_, i) => (
+          <div
+            key={i}
+            className={`w-3 h-3 rounded-full ${
+              i + 1 <= currentStep 
+                ? 'bg-[#005a22]' 
+                : 'bg-gray-300'
+            }`}
+          />
+        ))}
+      </div>
     </div>
   );
 }
@@ -117,228 +132,145 @@ function Step1({ formData, setFormData, onNext }: {
   setFormData: (data: Partial<FormData>) => void;
   onNext: () => void;
 }) {
-  const [openContinents, setOpenContinents] = useState<Record<string, boolean>>({});
-
   const handleBusinessTypeSelect = (type: BusinessType) => {
-    setFormData({ 
-      businessType: type, 
-      countries: [], 
-      address: '', 
-      selectedCountry: '',
-      businessName: '',
-      category: '',
-      photo: null,
-      description: '',
-      whatsapp: '',
-      instagram: '',
-      schedule: {
-        monday: { enabled: false, from: '09:00', to: '18:00' },
-        tuesday: { enabled: false, from: '09:00', to: '18:00' },
-        wednesday: { enabled: false, from: '09:00', to: '18:00' },
-        thursday: { enabled: false, from: '09:00', to: '18:00' },
-        friday: { enabled: false, from: '09:00', to: '18:00' },
-        saturday: { enabled: false, from: '09:00', to: '18:00' },
-        sunday: { enabled: false, from: '09:00', to: '18:00' }
-      },
-      website: '',
-      services: ['']
-    });
+    setFormData({ businessType: type });
   };
 
   const handleCountryToggle = (country: string) => {
-    const newCountries = formData.countries.includes(country)
-      ? formData.countries.filter(c => c !== country)
-      : [...formData.countries, country];
-    setFormData({ countries: newCountries });
+    const currentCountries = formData.countries || [];
+    const isSelected = currentCountries.includes(country);
+    
+    if (isSelected) {
+      setFormData({ 
+        countries: currentCountries.filter(c => c !== country) 
+      });
+    } else {
+      setFormData({ 
+        countries: [...currentCountries, country] 
+      });
+    }
   };
 
-  const handleSelectAllCountries = () => {
-    setFormData({ countries: ALL_COUNTRIES });
-  };
-
-  const handleDeselectAllCountries = () => {
-    setFormData({ countries: [] });
-  };
-
-  const handleSelectContinentCountries = (continentCountries: string[]) => {
-    const newCountries = [...new Set([...formData.countries, ...continentCountries])];
-    setFormData({ countries: newCountries });
-  };
-
-  const handleDeselectContinentCountries = (continentCountries: string[]) => {
-    const newCountries = formData.countries.filter(c => !continentCountries.includes(c));
-    setFormData({ countries: newCountries });
-  };
-
-  const toggleContinent = (continent: string) => {
-    setOpenContinents(prev => ({
-      ...prev,
-      [continent]: !prev[continent]
-    }));
-  };
-
-  const canProceed = formData.businessType && (
-    (formData.businessType === 'online' && formData.countries.length > 0) ||
-    ((formData.businessType === 'presencial' || formData.businessType === 'hibrido') && formData.selectedCountry && formData.address.trim())
-  );
+  const canProceed = formData.businessType && 
+    (formData.businessType === 'online' || 
+     (formData.businessType === 'presencial' && formData.address) || 
+     (formData.businessType === 'hibrido' && formData.address));
 
   return (
     <div className="space-y-8">
       <div className="text-center">
         <h1 className="text-2xl font-bold text-[#005a22] mb-4">
-          Que tipo de atendimento você oferece?
+          Qual o tipo do seu negócio?
         </h1>
         <p className="text-gray-600">
-          Nos conte como seu negócio opera para configurarmos da melhor forma
+          Isso nos ajuda a personalizar sua experiência
         </p>
       </div>
 
       <div className="space-y-4">
         <button
-          onClick={() => handleBusinessTypeSelect('presencial')}
-          className={`w-full p-6 rounded-xl border-2 transition-all text-left ${
-            formData.businessType === 'presencial'
-              ? 'border-[#005a22] bg-[#fff8e2]'
+          onClick={() => handleBusinessTypeSelect('online')}
+          className={`w-full p-6 rounded-xl border-2 text-left transition-colors ${
+            formData.businessType === 'online'
+              ? 'border-[#005a22] bg-[#f0f8f0]'
               : 'border-gray-200 hover:border-gray-300'
           }`}
         >
-          <div className="font-bold text-lg text-[#005a22] mb-2">Atendimento somente Presencial</div>
-          <div className="text-gray-600 text-sm text-[14px] text-[13px]">
-            Loja física, restaurante, salão, serviço presencial
+          <div className="flex items-start gap-4">
+            <div className="text-2xl">💻</div>
+            <div>
+              <h3 className="font-semibold text-lg mb-2">Negócio Online</h3>
+              <p className="text-gray-600 text-sm">
+                Atende clientes remotamente através da internet
+              </p>
+            </div>
+          </div>
+        </button>
+
+        <button
+          onClick={() => handleBusinessTypeSelect('presencial')}
+          className={`w-full p-6 rounded-xl border-2 text-left transition-colors ${
+            formData.businessType === 'presencial'
+              ? 'border-[#005a22] bg-[#f0f8f0]'
+              : 'border-gray-200 hover:border-gray-300'
+          }`}
+        >
+          <div className="flex items-start gap-4">
+            <div className="text-2xl">🏪</div>
+            <div>
+              <h3 className="font-semibold text-lg mb-2">Negócio Presencial</h3>
+              <p className="text-gray-600 text-sm">
+                Tem endereço físico onde atende clientes
+              </p>
+            </div>
           </div>
         </button>
 
         <button
           onClick={() => handleBusinessTypeSelect('hibrido')}
-          className={`w-full p-6 rounded-xl border-2 transition-all text-left ${
+          className={`w-full p-6 rounded-xl border-2 text-left transition-colors ${
             formData.businessType === 'hibrido'
-              ? 'border-[#b0ff0b] bg-green-50'
+              ? 'border-[#005a22] bg-[#f0f8f0]'
               : 'border-gray-200 hover:border-gray-300'
           }`}
         >
-          <div className="font-bold text-lg text-[#005a22] mb-2">Atendimento Presencial e Online</div>
-          <div className="text-gray-600 text-sm text-[14px]">
-            Combina atendimento físico e serviços remotos
-          </div>
-        </button>
-
-        <button
-          onClick={() => handleBusinessTypeSelect('online')}
-          className={`w-full p-6 rounded-xl border-2 transition-all text-left ${
-            formData.businessType === 'online'
-              ? 'border-[#ff6c0e] bg-orange-50'
-              : 'border-gray-200 hover:border-gray-300'
-          }`}
-        >
-          <div className="font-bold text-lg text-[#ff6c0e] mb-2">Atendimento somente Online</div>
-          <div className="text-gray-600 text-sm text-[14px]">
-            Serviços remotos, e-commerce, consultoria digital
+          <div className="flex items-start gap-4">
+            <div className="text-2xl">🌐</div>
+            <div>
+              <h3 className="font-semibold text-lg mb-2">Híbrido</h3>
+              <p className="text-gray-600 text-sm">
+                Combina atendimento presencial e online
+              </p>
+            </div>
           </div>
         </button>
       </div>
 
-      {formData.businessType === 'online' && (
-        <div className="space-y-6">
-          <div className="flex items-center justify-between">
-            <h3 className="font-bold text-[#005a22] text-[14px]">Quais países você atende?</h3>
-            <div className="text-sm text-gray-600 text-[14px]">
-              {formData.countries.length} selecionado{formData.countries.length !== 1 ? 's' : ''}
-            </div>
-          </div>
-          
-
-
-          {Object.entries(COUNTRIES_BY_CONTINENT).map(([continent, countries]) => (
-            <Collapsible 
-              key={continent} 
-              open={openContinents[continent]} 
-              onOpenChange={() => toggleContinent(continent)}
-            >
-              <CollapsibleTrigger className="w-full">
-                <div className="flex items-center justify-between py-3 px-1 hover:bg-gray-50 rounded-lg transition-colors">
-                  <h4 className="font-medium text-[#005a22] text-sm text-[14px]">
-                    {continent}
-                  </h4>
-                  <div className="flex items-center gap-2">
-                    <span className="text-xs text-gray-500 text-[12px]">
-                      {countries.filter(c => formData.countries.includes(c)).length}/{countries.length}
-                    </span>
-                    <svg 
-                      className={`w-4 h-4 text-gray-500 transition-transform ${
-                        openContinents[continent] ? 'rotate-180' : ''
-                      }`} 
-                      fill="none" 
-                      viewBox="0 0 24 24" 
-                      stroke="currentColor"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </div>
-                </div>
-              </CollapsibleTrigger>
-              
-              <CollapsibleContent className="space-y-3">
-                <div className="flex gap-2 px-1">
-                  <button
-                    onClick={() => handleSelectContinentCountries(countries)}
-                    className="flex-1 py-1.5 px-3 bg-[#005a22] text-white rounded-md text-xs hover:bg-[#008934] transition-colors text-[12px]"
-                  >
-                    Selecionar todos
-                  </button>
-                  <button
-                    onClick={() => handleDeselectContinentCountries(countries)}
-                    className="flex-1 py-1.5 px-3 bg-gray-200 text-gray-700 rounded-md text-xs hover:bg-gray-300 transition-colors text-[12px]"
-                  >
-                    Limpar seleção
-                  </button>
-                </div>
-                
-                <div className="grid grid-cols-2 gap-2">
-                  {countries.map(country => (
-                    <button
-                      key={country}
-                      onClick={() => handleCountryToggle(country)}
-                      className={`p-2 rounded-md border transition-all text-xs text-left ${
-                        formData.countries.includes(country)
-                          ? 'border-[#ff6c0e] bg-orange-50 text-[#ff6c0e]'
-                          : 'border-gray-200 hover:border-gray-300'
-                      }`}
-                    >
-                      {country}
-                    </button>
-                  ))}
-                </div>
-              </CollapsibleContent>
-            </Collapsible>
-          ))}
-        </div>
-      )}
-
       {(formData.businessType === 'presencial' || formData.businessType === 'hibrido') && (
         <div className="space-y-4">
           <div>
-            <label className="block font-medium text-[#005a22] mb-2">País</label>
-            <select
-              value={formData.selectedCountry}
-              onChange={(e) => setFormData({ selectedCountry: e.target.value })}
-              className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005a22]"
-            >
-              <option value="">Selecione o país</option>
-              {COUNTRIES.map(country => (
-                <option key={country} value={country}>{country}</option>
-              ))}
-            </select>
-          </div>
-          
-          <div>
-            <label className="block font-medium text-[#005a22] mb-2">Endereço</label>
+            <label className="block text-sm font-medium text-gray-700 mb-2">
+              Endereço do seu negócio
+            </label>
             <input
               type="text"
               value={formData.address}
               onChange={(e) => setFormData({ address: e.target.value })}
-              placeholder="Rua, número, bairro, cidade"
-              className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005a22]"
+              placeholder="Digite o endereço completo"
+              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005a22]"
             />
+          </div>
+        </div>
+      )}
+
+      {formData.businessType && (
+        <div className="space-y-4">
+          <h3 className="font-semibold text-lg">Em quais países você atende?</h3>
+          <p className="text-gray-600 text-sm">Selecione um ou mais países</p>
+          
+          <div className="space-y-4">
+            {Object.entries(COUNTRIES_BY_CONTINENT).map(([continent, countries]) => (
+              <Collapsible key={continent}>
+                <CollapsibleTrigger className="flex items-center justify-between w-full p-3 bg-gray-50 rounded-lg text-left font-medium hover:bg-gray-100">
+                  <span>{continent}</span>
+                  <span className="text-xl">▼</span>
+                </CollapsibleTrigger>
+                <CollapsibleContent className="space-y-2 p-4 border border-gray-200 rounded-b-lg">
+                  {countries.map((country) => (
+                    <div key={country} className="flex items-center space-x-2">
+                      <Checkbox
+                        id={country}
+                        checked={formData.countries?.includes(country) || false}
+                        onCheckedChange={() => handleCountryToggle(country)}
+                      />
+                      <label htmlFor={country} className="text-sm cursor-pointer">
+                        {country}
+                      </label>
+                    </div>
+                  ))}
+                </CollapsibleContent>
+              </Collapsible>
+            ))}
           </div>
         </div>
       )}
@@ -433,28 +365,11 @@ function Step3({ formData, setFormData, onFinish }: {
   };
 
   const removeService = (index: number) => {
-    if (formData.services.length > 1) {
-      const newServices = formData.services.filter((_, i) => i !== index);
-      setFormData({ services: newServices });
-    }
+    const newServices = formData.services.filter((_, i) => i !== index);
+    setFormData({ services: newServices });
   };
 
-  const hasValidServices = formData.services.some(service => service.trim() !== '');
-  const canFinish = formData.businessName.trim() && formData.category && formData.description.trim() && formData.whatsapp.trim() && hasValidServices;
-
-  const handleScheduleToggle = (day: keyof typeof formData.schedule) => {
-    setFormData({
-      schedule: {
-        ...formData.schedule,
-        [day]: {
-          ...formData.schedule[day],
-          enabled: !formData.schedule[day].enabled
-        }
-      }
-    });
-  };
-
-  const handleScheduleTimeChange = (day: keyof typeof formData.schedule, field: 'from' | 'to', value: string) => {
+  const handleScheduleChange = (day: keyof FormData['schedule'], field: keyof ScheduleDay, value: string | boolean) => {
     setFormData({
       schedule: {
         ...formData.schedule,
@@ -466,203 +381,174 @@ function Step3({ formData, setFormData, onFinish }: {
     });
   };
 
-  const repeatFirstSchedule = () => {
-    const firstEnabledDay = Object.entries(formData.schedule).find(([_, day]) => day.enabled);
-    if (firstEnabledDay) {
-      const [_, scheduleData] = firstEnabledDay;
-      const updatedSchedule = { ...formData.schedule };
-      
-      Object.keys(updatedSchedule).forEach(day => {
-        if (updatedSchedule[day as keyof typeof updatedSchedule].enabled) {
-          updatedSchedule[day as keyof typeof updatedSchedule] = {
-            enabled: true,
-            from: scheduleData.from,
-            to: scheduleData.to
-          };
-        }
-      });
-      
-      setFormData({ schedule: updatedSchedule });
-    }
-  };
-
-  const dayNames = {
-    monday: 'Segunda',
-    tuesday: 'Terça',
-    wednesday: 'Quarta',
-    thursday: 'Quinta',
-    friday: 'Sexta',
-    saturday: 'Sábado',
-    sunday: 'Domingo'
-  };
+  const hasValidServices = formData.services.some(service => service.trim() !== '');
+  const canFinish = formData.businessName && formData.category && formData.description && hasValidServices;
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-8">
       <div className="text-center">
         <h1 className="text-2xl font-bold text-[#005a22] mb-4">
-          Informações do negócio
+          Dados do seu negócio
         </h1>
         <p className="text-gray-600">
-          Agora vamos completar o perfil do seu negócio
+          Preencha as informações para finalizar o cadastro
         </p>
       </div>
 
-      <div className="space-y-4">
+      <div className="space-y-6">
         <div>
-          <label className="block font-medium text-[#005a22] mb-2">Nome do negócio *</label>
+          <label className="block text-sm font-medium text-gray-700 mb-2">
+            Nome do negócio *
+          </label>
           <input
             type="text"
             value={formData.businessName}
             onChange={(e) => setFormData({ businessName: e.target.value })}
-            placeholder="Ex: Sabor do Brasil"
-            className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005a22]"
+            placeholder="Digite o nome do seu negócio"
+            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005a22]"
           />
         </div>
 
         <div>
-          <label className="block font-medium text-[#005a22] mb-2">Categoria *</label>
+          <label className="block text-sm font-medium text-gray-700 mb-2">
+            Categoria *
+          </label>
           <select
             value={formData.category}
             onChange={(e) => setFormData({ category: e.target.value })}
-            className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005a22]"
+            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005a22]"
           >
             <option value="">Selecione uma categoria</option>
-            {CATEGORIES.map(category => (
-              <option key={category} value={category}>{category}</option>
+            {CATEGORIES.map((category) => (
+              <option key={category} value={category}>
+                {category}
+              </option>
             ))}
           </select>
         </div>
 
         <div>
-          <label className="block font-medium text-[#005a22] mb-2">Logo ou foto</label>
-          <div className="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center">
-            <input
-              type="file"
-              accept="image/*"
-              onChange={handlePhotoUpload}
-              className="hidden"
-              id="photo-upload"
-            />
-            <label htmlFor="photo-upload" className="cursor-pointer">
-              {formData.photo ? (
-                <div className="text-[#005a22]">
-                  ✓ {formData.photo.name}
-                </div>
-              ) : (
-                <div>
-                  <div className="text-gray-400 mb-2">📷</div>
-                  <div className="text-sm text-gray-600">
-                    Toque para adicionar uma foto
-                  </div>
-                </div>
-              )}
-            </label>
-          </div>
+          <label className="block text-sm font-medium text-gray-700 mb-2">
+            Foto do negócio
+          </label>
+          <input
+            type="file"
+            accept="image/*"
+            onChange={handlePhotoUpload}
+            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005a22]"
+          />
+          {formData.photo && (
+            <p className="text-sm text-gray-600 mt-1">
+              Arquivo selecionado: {formData.photo.name}
+            </p>
+          )}
         </div>
 
         <div>
-          <label className="block font-medium text-[#005a22] mb-2">Descrição curta *</label>
+          <label className="block text-sm font-medium text-gray-700 mb-2">
+            Descrição do negócio *
+          </label>
           <textarea
             value={formData.description}
             onChange={(e) => setFormData({ description: e.target.value })}
-            placeholder="Descreva brevemente seu negócio..."
-            rows={3}
-            className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005a22] resize-none"
+            placeholder="Descreva seu negócio, o que você oferece..."
+            rows={4}
+            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005a22]"
           />
         </div>
 
         <div>
-          <label className="block font-medium text-[#005a22] mb-2">WhatsApp *</label>
+          <label className="block text-sm font-medium text-gray-700 mb-2">
+            WhatsApp
+          </label>
           <input
             type="tel"
             value={formData.whatsapp}
             onChange={(e) => setFormData({ whatsapp: e.target.value })}
-            placeholder="Ex: +34 123 456 789"
-            className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005a22]"
+            placeholder="(11) 99999-9999"
+            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005a22]"
           />
-          <p className="text-xs text-gray-500 mt-1">Inclua o código do país</p>
         </div>
 
         <div>
-          <label className="block font-medium text-[#005a22] mb-2">Instagram</label>
-          <div className="relative">
-            <span className="absolute left-4 top-4 text-gray-400">@</span>
-            <input
-              type="text"
-              value={formData.instagram}
-              onChange={(e) => setFormData({ instagram: e.target.value })}
-              placeholder="seuusuario"
-              className="w-full p-4 pl-8 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005a22]"
-            />
-          </div>
+          <label className="block text-sm font-medium text-gray-700 mb-2">
+            Instagram
+          </label>
+          <input
+            type="text"
+            value={formData.instagram}
+            onChange={(e) => setFormData({ instagram: e.target.value })}
+            placeholder="@seuusuario"
+            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005a22]"
+          />
         </div>
 
         <div>
-          <label className="block font-medium text-[#005a22] mb-2">Website</label>
+          <label className="block text-sm font-medium text-gray-700 mb-2">
+            Website
+          </label>
           <input
             type="url"
             value={formData.website}
             onChange={(e) => setFormData({ website: e.target.value })}
-            placeholder="https://www.seusite.com"
-            className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005a22]"
+            placeholder="https://seusite.com"
+            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005a22]"
           />
         </div>
 
         <div>
-          <div className="flex items-center justify-between mb-3">
-            <label className="block font-medium text-[#005a22]">Horário de atendimento</label>
-            {Object.values(formData.schedule).some(day => day.enabled) && (
-              <button
-                type="button"
-                onClick={repeatFirstSchedule}
-                className="text-[#005a22] text-sm underline hover:no-underline"
-              >
-                repetir
-              </button>
-            )}
-          </div>
+          <label className="block text-sm font-medium text-gray-700 mb-2">
+            Horário de funcionamento
+          </label>
           <div className="space-y-3">
-            {Object.entries(formData.schedule).map(([dayKey, dayData]) => (
-              <div key={dayKey} className="space-y-2">
-                <div className="flex items-center gap-3">
+            {Object.entries(formData.schedule).map(([day, schedule]) => (
+              <div key={day} className="flex items-center gap-3">
+                <div className="flex items-center">
                   <Checkbox
-                    checked={dayData.enabled}
-                    onCheckedChange={() => handleScheduleToggle(dayKey as keyof typeof formData.schedule)}
+                    id={day}
+                    checked={schedule.enabled}
+                    onCheckedChange={(checked) => handleScheduleChange(day as keyof FormData['schedule'], 'enabled', checked as boolean)}
                   />
-                  <span className="font-medium text-sm w-16">
-                    {dayNames[dayKey as keyof typeof dayNames]}
-                  </span>
-                  {dayData.enabled && (
-                    <div className="flex items-center gap-2 flex-1">
-                      <span className="text-sm text-gray-600">De</span>
-                      <input
-                        type="time"
-                        value={dayData.from}
-                        onChange={(e) => handleScheduleTimeChange(dayKey as keyof typeof formData.schedule, 'from', e.target.value)}
-                        className="px-2 py-1 border border-gray-300 rounded text-sm focus:outline-none focus:border-[#005a22]"
-                      />
-                      <span className="text-sm text-gray-600">até</span>
-                      <input
-                        type="time"
-                        value={dayData.to}
-                        onChange={(e) => handleScheduleTimeChange(dayKey as keyof typeof formData.schedule, 'to', e.target.value)}
-                        className="px-2 py-1 border border-gray-300 rounded text-sm focus:outline-none focus:border-[#005a22]"
-                      />
-                    </div>
-                  )}
+                  <label htmlFor={day} className="ml-2 text-sm capitalize w-16">
+                    {day === 'monday' ? 'Seg' :
+                     day === 'tuesday' ? 'Ter' :
+                     day === 'wednesday' ? 'Qua' :
+                     day === 'thursday' ? 'Qui' :
+                     day === 'friday' ? 'Sex' :
+                     day === 'saturday' ? 'Sáb' : 'Dom'}
+                  </label>
                 </div>
+                {schedule.enabled && (
+                  <>
+                    <input
+                      type="time"
+                      value={schedule.from}
+                      onChange={(e) => handleScheduleChange(day as keyof FormData['schedule'], 'from', e.target.value)}
+                      className="p-2 border border-gray-300 rounded text-sm"
+                    />
+                    <span className="text-sm">às</span>
+                    <input
+                      type="time"
+                      value={schedule.to}
+                      onChange={(e) => handleScheduleChange(day as keyof FormData['schedule'], 'to', e.target.value)}
+                      className="p-2 border border-gray-300 rounded text-sm"
+                    />
+                  </>
+                )}
               </div>
             ))}
           </div>
         </div>
 
         <div>
-          <div className="flex items-center justify-between mb-2">
-            <label className="block font-medium text-[#005a22]">Serviços oferecidos *</label>
+          <div className="flex items-center justify-between mb-3">
+            <label className="block text-sm font-medium text-gray-700">
+              Serviços oferecidos *
+            </label>
             <button
               type="button"
               onClick={addService}
-              className="bg-[#005a22] text-white px-3 py-1 rounded-md text-sm hover:bg-[#008934] transition-colors flex items-center gap-1"
+              className="bg-[#005a22] text-white px-3 py-1 rounded text-sm hover:bg-[#008934] transition-colors"
             >
               + Adicionar
             </button>
@@ -716,10 +602,10 @@ function SuccessStep({ onViewBusiness, onShare }: {
       
       <div>
         <h1 className="text-2xl font-bold text-[#005a22] mb-4">
-          Seu negócio está no ar!
+          Parabéns!
         </h1>
         <p className="text-gray-600">
-          Agora ele já pode ser encontrado por brasileiros na sua região. É 100% gratuito!
+          Seu negócio foi cadastrado com sucesso no Imigrei
         </p>
       </div>
 
@@ -733,9 +619,9 @@ function SuccessStep({ onViewBusiness, onShare }: {
         
         <button
           onClick={onShare}
-          className="w-full bg-[#ff6c0e] text-white py-4 px-6 rounded-xl font-medium hover:bg-orange-600 transition-colors"
+          className="w-full border-2 border-[#005a22] text-[#005a22] py-4 px-6 rounded-xl font-medium hover:bg-[#f0f8f0] transition-colors"
         >
-          Compartilhar no WhatsApp
+          Compartilhar
         </button>
       </div>
     </div>

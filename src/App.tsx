@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { supabase } from '@/lib/supabaseClient';
 import Home from './components/Home';
 import SearchResults from './components/SearchResults';
 import BusinessDetails from './components/BusinessDetails';
@@ -6,9 +7,6 @@ import BusinessRegisterWizard from './components/BusinessRegisterWizard';
 import HowItWorks from './components/HowItWorks';
 import Login from './components/Login';
 import MyAccount from './components/MyAccount';
-import AuthGuard from './components/AuthGuard';
-import { useAuth } from './hooks/useAuth';
-
 
 export type SearchParams = {
   query: string;
@@ -40,6 +38,61 @@ function setURLParams(params: SearchParams, view?: ViewType) {
   
   const newURL = `${window.location.pathname}${urlParams.toString() ? '?' + urlParams.toString() : ''}`;
   window.history.pushState({}, '', newURL);
+}
+
+// Hook de autenticação integrado
+function useAuth() {
+  const [user, setUser] = useState<any>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Get initial session
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      setUser(session?.user ?? null);
+      setLoading(false);
+    });
+
+    // Listen for auth changes
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
+      setUser(session?.user ?? null);
+      setLoading(false);
+    });
+
+    return () => subscription.unsubscribe();
+  }, []);
+
+  return { user, loading };
+}
+
+// Auth Guard Component
+function AuthGuard({ children, onUnauthenticated }: { children: React.ReactNode; onUnauthenticated?: () => void }) {
+  const { user, loading } = useAuth();
+
+  if (loading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-gray-900"></div>
+      </div>
+    );
+  }
+
+  if (!user) {
+    if (onUnauthenticated) {
+      onUnauthenticated();
+      return null;
+    }
+    
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-center">
+          <h2 className="text-2xl font-bold mb-4">Acesso Restrito</h2>
+          <p className="text-gray-600">Você precisa estar logado para acessar esta página.</p>
+        </div>
+      </div>
+    );
+  }
+
+  return <>{children}</>;
 }
 
 export default function App() {
